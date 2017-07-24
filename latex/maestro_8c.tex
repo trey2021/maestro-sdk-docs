@@ -1,0 +1,101 @@
+\hypertarget{maestro_8c}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/maestro.c File Reference}
+\label{maestro_8c}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/maestro.\+c@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/maestro.\+c}}
+{\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include $<$logging.\+h$>$}\newline
+{\ttfamily \#include $<$packet/packet\+\_\+detection.\+h$>$}\newline
+{\ttfamily \#include $<$packet/packet.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}motion\+\_\+capture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}force\+\_\+feedback.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vibrations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}calibration.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}detection.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_maestro_thread_args}{Maestro\+Thread\+Args}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{maestro_8c_a8ed7b0289879edd2b4c6c46c995a57d2}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{maestro_8c_abb308d3f118eee41c15deaac7ec9ba79}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI} (bool)
+\item 
+\hyperlink{maestro_8c_ab1d36c308a3bd344ded6afd6713eb6c1}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI} (int)
+\item 
+\hyperlink{maestro_8c_ae91a047e60f452a1f5919031350f4794}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI} (intptr\+\_\+t const) \hyperlink{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer}()
+\item 
+\hyperlink{maestro_8c_a87a60a8f98a54de83756836db293d421}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI} (void)
+\item 
+\hyperlink{maestro_8c_aa5bd8ae8d6a56b69ec5a857f53ec638b}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI} (float)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_maestro_glove}{Maestro\+Glove} \hyperlink{maestro_8c_ac54713749609e6f87d8bf4354f3a1abd}{left\+Glove}
+\item 
+\hyperlink{struct_maestro_glove}{Maestro\+Glove} \hyperlink{maestro_8c_a08be318883ee9e7b2e0d9d2ef41392cf}{right\+Glove}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{maestro_8c_a8ed7b0289879edd2b4c6c46c995a57d2}\label{maestro_8c_a8ed7b0289879edd2b4c6c46c995a57d2}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT}{MAESTRO\_API\_EXPORT}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I\+\_\+\+E\+X\+P\+O\+RT~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{maestro_8c_abb308d3f118eee41c15deaac7ec9ba79}\label{maestro_8c_abb308d3f118eee41c15deaac7ec9ba79}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I()}{MAESTRO\_API()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{maestro_8c_ab1d36c308a3bd344ded6afd6713eb6c1}\label{maestro_8c_ab1d36c308a3bd344ded6afd6713eb6c1}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I()}{MAESTRO\_API()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{maestro_8c_ae91a047e60f452a1f5919031350f4794}\label{maestro_8c_ae91a047e60f452a1f5919031350f4794}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I()}{MAESTRO\_API()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI (\begin{DoxyParamCaption}\item[{intptr\+\_\+t const}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{maestro_8c_a87a60a8f98a54de83756836db293d421}\label{maestro_8c_a87a60a8f98a54de83756836db293d421}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I()}{MAESTRO\_API()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{maestro_8c_aa5bd8ae8d6a56b69ec5a857f53ec638b}\label{maestro_8c_aa5bd8ae8d6a56b69ec5a857f53ec638b}} 
+\index{maestro.\+c@{maestro.\+c}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+P\+I()}{MAESTRO\_API()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{maestro_8c_ac54713749609e6f87d8bf4354f3a1abd}\label{maestro_8c_ac54713749609e6f87d8bf4354f3a1abd}} 
+\index{maestro.\+c@{maestro.\+c}!left\+Glove@{left\+Glove}}
+\index{left\+Glove@{left\+Glove}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{left\+Glove}{leftGlove}}
+{\footnotesize\ttfamily \hyperlink{struct_maestro_glove}{Maestro\+Glove} left\+Glove}
+
+\mbox{\Hypertarget{maestro_8c_a08be318883ee9e7b2e0d9d2ef41392cf}\label{maestro_8c_a08be318883ee9e7b2e0d9d2ef41392cf}} 
+\index{maestro.\+c@{maestro.\+c}!right\+Glove@{right\+Glove}}
+\index{right\+Glove@{right\+Glove}!maestro.\+c@{maestro.\+c}}
+\subsubsection{\texorpdfstring{right\+Glove}{rightGlove}}
+{\footnotesize\ttfamily \hyperlink{struct_maestro_glove}{Maestro\+Glove} right\+Glove}
+

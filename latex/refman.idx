@@ -1,0 +1,147 @@
+\indexentry{Maestro calibration functions@{Maestro calibration functions}|hyperpage}{9}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+proximal\+\_\+calibration@{end\+\_\+proximal\+\_\+calibration}|hyperpage}{9}
+\indexentry{end\+\_\+proximal\+\_\+calibration@{end\+\_\+proximal\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{9}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+thumb\+\_\+calibration@{end\+\_\+thumb\+\_\+calibration}|hyperpage}{10}
+\indexentry{end\+\_\+thumb\+\_\+calibration@{end\+\_\+thumb\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{10}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+wrist\+\_\+calibration@{end\+\_\+wrist\+\_\+calibration}|hyperpage}{10}
+\indexentry{end\+\_\+wrist\+\_\+calibration@{end\+\_\+wrist\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{10}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!get\+\_\+calibration\+\_\+state@{get\+\_\+calibration\+\_\+state}|hyperpage}{10}
+\indexentry{get\+\_\+calibration\+\_\+state@{get\+\_\+calibration\+\_\+state}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{10}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+proximal\+\_\+calibration@{start\+\_\+proximal\+\_\+calibration}|hyperpage}{11}
+\indexentry{start\+\_\+proximal\+\_\+calibration@{start\+\_\+proximal\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{11}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+thumb\+\_\+calibration@{start\+\_\+thumb\+\_\+calibration}|hyperpage}{11}
+\indexentry{start\+\_\+thumb\+\_\+calibration@{start\+\_\+thumb\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{11}
+\indexentry{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+wrist\+\_\+calibration@{start\+\_\+wrist\+\_\+calibration}|hyperpage}{11}
+\indexentry{start\+\_\+wrist\+\_\+calibration@{start\+\_\+wrist\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}|hyperpage}{11}
+\indexentry{Glove management functions@{Glove management functions}|hyperpage}{13}
+\indexentry{Glove management functions@{Glove management functions}!get\+\_\+glove\+\_\+context@{get\+\_\+glove\+\_\+context}|hyperpage}{13}
+\indexentry{get\+\_\+glove\+\_\+context@{get\+\_\+glove\+\_\+context}!Glove management functions@{Glove management functions}|hyperpage}{13}
+\indexentry{Glove management functions@{Glove management functions}!get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}|hyperpage}{13}
+\indexentry{get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}!Glove management functions@{Glove management functions}|hyperpage}{13}
+\indexentry{Glove management functions@{Glove management functions}!get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}|hyperpage}{14}
+\indexentry{get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}!Glove management functions@{Glove management functions}|hyperpage}{14}
+\indexentry{Glove management functions@{Glove management functions}!is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}|hyperpage}{14}
+\indexentry{is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}!Glove management functions@{Glove management functions}|hyperpage}{14}
+\indexentry{Glove management functions@{Glove management functions}!start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}|hyperpage}{14}
+\indexentry{start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}!Glove management functions@{Glove management functions}|hyperpage}{14}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}|hyperpage}{15}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+displacement\+\_\+context@{get\+\_\+displacement\+\_\+context}|hyperpage}{15}
+\indexentry{get\+\_\+displacement\+\_\+context@{get\+\_\+displacement\+\_\+context}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{15}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+index\+\_\+distal\+\_\+displacement@{get\+\_\+index\+\_\+distal\+\_\+displacement}|hyperpage}{15}
+\indexentry{get\+\_\+index\+\_\+distal\+\_\+displacement@{get\+\_\+index\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{15}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+index\+\_\+proximal\+\_\+displacement@{get\+\_\+index\+\_\+proximal\+\_\+displacement}|hyperpage}{16}
+\indexentry{get\+\_\+index\+\_\+proximal\+\_\+displacement@{get\+\_\+index\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{16}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+little\+\_\+distal\+\_\+displacement@{get\+\_\+little\+\_\+distal\+\_\+displacement}|hyperpage}{16}
+\indexentry{get\+\_\+little\+\_\+distal\+\_\+displacement@{get\+\_\+little\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{16}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+little\+\_\+proximal\+\_\+displacement@{get\+\_\+little\+\_\+proximal\+\_\+displacement}|hyperpage}{17}
+\indexentry{get\+\_\+little\+\_\+proximal\+\_\+displacement@{get\+\_\+little\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{17}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+middle\+\_\+distal\+\_\+displacement@{get\+\_\+middle\+\_\+distal\+\_\+displacement}|hyperpage}{17}
+\indexentry{get\+\_\+middle\+\_\+distal\+\_\+displacement@{get\+\_\+middle\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{17}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+middle\+\_\+proximal\+\_\+displacement@{get\+\_\+middle\+\_\+proximal\+\_\+displacement}|hyperpage}{17}
+\indexentry{get\+\_\+middle\+\_\+proximal\+\_\+displacement@{get\+\_\+middle\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{17}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+ring\+\_\+distal\+\_\+displacement@{get\+\_\+ring\+\_\+distal\+\_\+displacement}|hyperpage}{18}
+\indexentry{get\+\_\+ring\+\_\+distal\+\_\+displacement@{get\+\_\+ring\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{18}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+ring\+\_\+proximal\+\_\+displacement@{get\+\_\+ring\+\_\+proximal\+\_\+displacement}|hyperpage}{18}
+\indexentry{get\+\_\+ring\+\_\+proximal\+\_\+displacement@{get\+\_\+ring\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{18}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+abduction\+\_\+displacement@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement}|hyperpage}{18}
+\indexentry{get\+\_\+thumb\+\_\+abduction\+\_\+displacement@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{18}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+distal\+\_\+displacement@{get\+\_\+thumb\+\_\+distal\+\_\+displacement}|hyperpage}{19}
+\indexentry{get\+\_\+thumb\+\_\+distal\+\_\+displacement@{get\+\_\+thumb\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{19}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+displacement@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement}|hyperpage}{19}
+\indexentry{get\+\_\+thumb\+\_\+proximal\+\_\+displacement@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{19}
+\indexentry{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+wrist\+\_\+proximal\+\_\+displacement@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement}|hyperpage}{19}
+\indexentry{get\+\_\+wrist\+\_\+proximal\+\_\+displacement@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}|hyperpage}{19}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}|hyperpage}{21}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+distal\+\_\+rotation@{get\+\_\+index\+\_\+distal\+\_\+rotation}|hyperpage}{21}
+\indexentry{get\+\_\+index\+\_\+distal\+\_\+rotation@{get\+\_\+index\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{21}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+proximal\+\_\+rotation@{get\+\_\+index\+\_\+proximal\+\_\+rotation}|hyperpage}{22}
+\indexentry{get\+\_\+index\+\_\+proximal\+\_\+rotation@{get\+\_\+index\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{22}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}|hyperpage}{22}
+\indexentry{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{22}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+distal\+\_\+rotation@{get\+\_\+little\+\_\+distal\+\_\+rotation}|hyperpage}{22}
+\indexentry{get\+\_\+little\+\_\+distal\+\_\+rotation@{get\+\_\+little\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{22}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+proximal\+\_\+rotation@{get\+\_\+little\+\_\+proximal\+\_\+rotation}|hyperpage}{23}
+\indexentry{get\+\_\+little\+\_\+proximal\+\_\+rotation@{get\+\_\+little\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{23}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}|hyperpage}{23}
+\indexentry{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{23}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+distal\+\_\+rotation@{get\+\_\+middle\+\_\+distal\+\_\+rotation}|hyperpage}{23}
+\indexentry{get\+\_\+middle\+\_\+distal\+\_\+rotation@{get\+\_\+middle\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{23}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+proximal\+\_\+rotation@{get\+\_\+middle\+\_\+proximal\+\_\+rotation}|hyperpage}{24}
+\indexentry{get\+\_\+middle\+\_\+proximal\+\_\+rotation@{get\+\_\+middle\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{24}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}|hyperpage}{24}
+\indexentry{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{24}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+distal\+\_\+rotation@{get\+\_\+ring\+\_\+distal\+\_\+rotation}|hyperpage}{25}
+\indexentry{get\+\_\+ring\+\_\+distal\+\_\+rotation@{get\+\_\+ring\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{25}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+proximal\+\_\+rotation@{get\+\_\+ring\+\_\+proximal\+\_\+rotation}|hyperpage}{25}
+\indexentry{get\+\_\+ring\+\_\+proximal\+\_\+rotation@{get\+\_\+ring\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{25}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}|hyperpage}{25}
+\indexentry{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{25}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+rotation\+\_\+context@{get\+\_\+rotation\+\_\+context}|hyperpage}{26}
+\indexentry{get\+\_\+rotation\+\_\+context@{get\+\_\+rotation\+\_\+context}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{26}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+abduction\+\_\+rotation@{get\+\_\+thumb\+\_\+abduction\+\_\+rotation}|hyperpage}{26}
+\indexentry{get\+\_\+thumb\+\_\+abduction\+\_\+rotation@{get\+\_\+thumb\+\_\+abduction\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{26}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+distal\+\_\+rotation@{get\+\_\+thumb\+\_\+distal\+\_\+rotation}|hyperpage}{26}
+\indexentry{get\+\_\+thumb\+\_\+distal\+\_\+rotation@{get\+\_\+thumb\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{26}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+rotation@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation}|hyperpage}{27}
+\indexentry{get\+\_\+thumb\+\_\+proximal\+\_\+rotation@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{27}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}|hyperpage}{27}
+\indexentry{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{27}
+\indexentry{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+wrist\+\_\+proximal\+\_\+rotation@{get\+\_\+wrist\+\_\+proximal\+\_\+rotation}|hyperpage}{27}
+\indexentry{get\+\_\+wrist\+\_\+proximal\+\_\+rotation@{get\+\_\+wrist\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}|hyperpage}{27}
+\indexentry{Haptic control functions@{Haptic control functions}|hyperpage}{29}
+\indexentry{Vibration control functions@{Vibration control functions}|hyperpage}{30}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+index\+\_\+vibration\+\_\+effect@{get\+\_\+index\+\_\+vibration\+\_\+effect}|hyperpage}{30}
+\indexentry{get\+\_\+index\+\_\+vibration\+\_\+effect@{get\+\_\+index\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{30}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+little\+\_\+vibration\+\_\+effect@{get\+\_\+little\+\_\+vibration\+\_\+effect}|hyperpage}{30}
+\indexentry{get\+\_\+little\+\_\+vibration\+\_\+effect@{get\+\_\+little\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{30}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+middle\+\_\+vibration\+\_\+effect@{get\+\_\+middle\+\_\+vibration\+\_\+effect}|hyperpage}{31}
+\indexentry{get\+\_\+middle\+\_\+vibration\+\_\+effect@{get\+\_\+middle\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{31}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+ring\+\_\+vibration\+\_\+effect@{get\+\_\+ring\+\_\+vibration\+\_\+effect}|hyperpage}{31}
+\indexentry{get\+\_\+ring\+\_\+vibration\+\_\+effect@{get\+\_\+ring\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{31}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+thumb\+\_\+vibration\+\_\+effect@{get\+\_\+thumb\+\_\+vibration\+\_\+effect}|hyperpage}{31}
+\indexentry{get\+\_\+thumb\+\_\+vibration\+\_\+effect@{get\+\_\+thumb\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{31}
+\indexentry{Vibration control functions@{Vibration control functions}!get\+\_\+vibration\+\_\+context@{get\+\_\+vibration\+\_\+context}|hyperpage}{32}
+\indexentry{get\+\_\+vibration\+\_\+context@{get\+\_\+vibration\+\_\+context}!Vibration control functions@{Vibration control functions}|hyperpage}{32}
+\indexentry{Vibration control functions@{Vibration control functions}!set\+\_\+index\+\_\+vibration\+\_\+effect@{set\+\_\+index\+\_\+vibration\+\_\+effect}|hyperpage}{32}
+\indexentry{set\+\_\+index\+\_\+vibration\+\_\+effect@{set\+\_\+index\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{32}
+\indexentry{Vibration control functions@{Vibration control functions}!set\+\_\+little\+\_\+vibration\+\_\+effect@{set\+\_\+little\+\_\+vibration\+\_\+effect}|hyperpage}{33}
+\indexentry{set\+\_\+little\+\_\+vibration\+\_\+effect@{set\+\_\+little\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{33}
+\indexentry{Vibration control functions@{Vibration control functions}!set\+\_\+middle\+\_\+vibration\+\_\+effect@{set\+\_\+middle\+\_\+vibration\+\_\+effect}|hyperpage}{33}
+\indexentry{set\+\_\+middle\+\_\+vibration\+\_\+effect@{set\+\_\+middle\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{33}
+\indexentry{Vibration control functions@{Vibration control functions}!set\+\_\+ring\+\_\+vibration\+\_\+effect@{set\+\_\+ring\+\_\+vibration\+\_\+effect}|hyperpage}{33}
+\indexentry{set\+\_\+ring\+\_\+vibration\+\_\+effect@{set\+\_\+ring\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{33}
+\indexentry{Vibration control functions@{Vibration control functions}!set\+\_\+thumb\+\_\+vibration\+\_\+effect@{set\+\_\+thumb\+\_\+vibration\+\_\+effect}|hyperpage}{34}
+\indexentry{set\+\_\+thumb\+\_\+vibration\+\_\+effect@{set\+\_\+thumb\+\_\+vibration\+\_\+effect}!Vibration control functions@{Vibration control functions}|hyperpage}{34}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{35}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+default\+\_\+motor\+\_\+amplitude@{get\+\_\+default\+\_\+motor\+\_\+amplitude}|hyperpage}{35}
+\indexentry{get\+\_\+default\+\_\+motor\+\_\+amplitude@{get\+\_\+default\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{35}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+force\+\_\+feedback\+\_\+context@{get\+\_\+force\+\_\+feedback\+\_\+context}|hyperpage}{35}
+\indexentry{get\+\_\+force\+\_\+feedback\+\_\+context@{get\+\_\+force\+\_\+feedback\+\_\+context}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{35}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+index\+\_\+motor\+\_\+amplitude@{get\+\_\+index\+\_\+motor\+\_\+amplitude}|hyperpage}{36}
+\indexentry{get\+\_\+index\+\_\+motor\+\_\+amplitude@{get\+\_\+index\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{36}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+little\+\_\+motor\+\_\+amplitude@{get\+\_\+little\+\_\+motor\+\_\+amplitude}|hyperpage}{36}
+\indexentry{get\+\_\+little\+\_\+motor\+\_\+amplitude@{get\+\_\+little\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{36}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+max\+\_\+motor\+\_\+amplitude@{get\+\_\+max\+\_\+motor\+\_\+amplitude}|hyperpage}{36}
+\indexentry{get\+\_\+max\+\_\+motor\+\_\+amplitude@{get\+\_\+max\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{36}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+middle\+\_\+motor\+\_\+amplitude@{get\+\_\+middle\+\_\+motor\+\_\+amplitude}|hyperpage}{37}
+\indexentry{get\+\_\+middle\+\_\+motor\+\_\+amplitude@{get\+\_\+middle\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{37}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+ring\+\_\+motor\+\_\+amplitude@{get\+\_\+ring\+\_\+motor\+\_\+amplitude}|hyperpage}{37}
+\indexentry{get\+\_\+ring\+\_\+motor\+\_\+amplitude@{get\+\_\+ring\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{37}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+thumb\+\_\+motor\+\_\+amplitude@{get\+\_\+thumb\+\_\+motor\+\_\+amplitude}|hyperpage}{37}
+\indexentry{get\+\_\+thumb\+\_\+motor\+\_\+amplitude@{get\+\_\+thumb\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{37}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+index\+\_\+motor\+\_\+amplitude@{set\+\_\+index\+\_\+motor\+\_\+amplitude}|hyperpage}{38}
+\indexentry{set\+\_\+index\+\_\+motor\+\_\+amplitude@{set\+\_\+index\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{38}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+little\+\_\+motor\+\_\+amplitude@{set\+\_\+little\+\_\+motor\+\_\+amplitude}|hyperpage}{38}
+\indexentry{set\+\_\+little\+\_\+motor\+\_\+amplitude@{set\+\_\+little\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{38}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+middle\+\_\+motor\+\_\+amplitude@{set\+\_\+middle\+\_\+motor\+\_\+amplitude}|hyperpage}{38}
+\indexentry{set\+\_\+middle\+\_\+motor\+\_\+amplitude@{set\+\_\+middle\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{38}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+ring\+\_\+motor\+\_\+amplitude@{set\+\_\+ring\+\_\+motor\+\_\+amplitude}|hyperpage}{39}
+\indexentry{set\+\_\+ring\+\_\+motor\+\_\+amplitude@{set\+\_\+ring\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{39}
+\indexentry{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+thumb\+\_\+motor\+\_\+amplitude@{set\+\_\+thumb\+\_\+motor\+\_\+amplitude}|hyperpage}{39}
+\indexentry{set\+\_\+thumb\+\_\+motor\+\_\+amplitude@{set\+\_\+thumb\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}|hyperpage}{39}
+\indexentry{Calibration\+State@{Calibration\+State}|hyperpage}{41}
+\indexentry{Displacement\+Context@{Displacement\+Context}|hyperpage}{41}
+\indexentry{Force\+Feedback\+Context@{Force\+Feedback\+Context}|hyperpage}{42}
+\indexentry{Maestro\+Glove\+Context@{Maestro\+Glove\+Context}|hyperpage}{43}
+\indexentry{Rotation\+Context@{Rotation\+Context}|hyperpage}{44}
+\indexentry{Vibration\+Context@{Vibration\+Context}|hyperpage}{44}

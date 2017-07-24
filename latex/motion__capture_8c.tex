@@ -1,0 +1,36 @@
+\hypertarget{motion__capture_8c}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/motion\+\_\+capture.c File Reference}
+\label{motion__capture_8c}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/motion\+\_\+capture.\+c@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/motion\+\_\+capture.\+c}}
+{\ttfamily \#include $<$maestro.\+h$>$}\newline
+{\ttfamily \#include $<$packet/packet\+\_\+motion\+\_\+capture.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}motion\+\_\+capture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arduino\+\_\+usb.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{motion__capture_8c_a16b41e8c81e17db1342c6da5c0aaddaf}{send\+\_\+phalange\+\_\+displacements\+\_\+request} (H\+A\+N\+D\+LE h\+Arduino)
+\item 
+bool \hyperlink{motion__capture_8c_a8a2cb729240ba836e624146a07b4ca53}{read\+\_\+phalange\+\_\+displacements\+\_\+reply} (H\+A\+N\+D\+LE h\+Arduino, \hyperlink{struct_phalange_displacements_reply}{Phalange\+Displacements\+Reply} $\ast$reply)
+\item 
+void \hyperlink{motion__capture_8c_a4359e5f2501ac8586595e2a44caab56d}{update\+\_\+phalange\+\_\+displacements} (\hyperlink{struct_maestro_glove_phalanges}{Maestro\+Glove\+Phalanges} $\ast$p\+Phalanges, \hyperlink{struct_phalange_displacements_reply}{Phalange\+Displacements\+Reply} $\ast$p\+Readings)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{motion__capture_8c_a8a2cb729240ba836e624146a07b4ca53}\label{motion__capture_8c_a8a2cb729240ba836e624146a07b4ca53}} 
+\index{motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}!read\+\_\+phalange\+\_\+displacements\+\_\+reply@{read\+\_\+phalange\+\_\+displacements\+\_\+reply}}
+\index{read\+\_\+phalange\+\_\+displacements\+\_\+reply@{read\+\_\+phalange\+\_\+displacements\+\_\+reply}!motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}}
+\subsubsection{\texorpdfstring{read\+\_\+phalange\+\_\+displacements\+\_\+reply()}{read\_phalange\_displacements\_reply()}}
+{\footnotesize\ttfamily bool read\+\_\+phalange\+\_\+displacements\+\_\+reply (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+Arduino,  }\item[{\hyperlink{struct_phalange_displacements_reply}{Phalange\+Displacements\+Reply} $\ast$}]{reply }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motion__capture_8c_a16b41e8c81e17db1342c6da5c0aaddaf}\label{motion__capture_8c_a16b41e8c81e17db1342c6da5c0aaddaf}} 
+\index{motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}!send\+\_\+phalange\+\_\+displacements\+\_\+request@{send\+\_\+phalange\+\_\+displacements\+\_\+request}}
+\index{send\+\_\+phalange\+\_\+displacements\+\_\+request@{send\+\_\+phalange\+\_\+displacements\+\_\+request}!motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}}
+\subsubsection{\texorpdfstring{send\+\_\+phalange\+\_\+displacements\+\_\+request()}{send\_phalange\_displacements\_request()}}
+{\footnotesize\ttfamily void send\+\_\+phalange\+\_\+displacements\+\_\+request (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+Arduino }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{motion__capture_8c_a4359e5f2501ac8586595e2a44caab56d}\label{motion__capture_8c_a4359e5f2501ac8586595e2a44caab56d}} 
+\index{motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}!update\+\_\+phalange\+\_\+displacements@{update\+\_\+phalange\+\_\+displacements}}
+\index{update\+\_\+phalange\+\_\+displacements@{update\+\_\+phalange\+\_\+displacements}!motion\+\_\+capture.\+c@{motion\+\_\+capture.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+phalange\+\_\+displacements()}{update\_phalange\_displacements()}}
+{\footnotesize\ttfamily void update\+\_\+phalange\+\_\+displacements (\begin{DoxyParamCaption}\item[{\hyperlink{struct_maestro_glove_phalanges}{Maestro\+Glove\+Phalanges} $\ast$}]{p\+Phalanges,  }\item[{\hyperlink{struct_phalange_displacements_reply}{Phalange\+Displacements\+Reply} $\ast$}]{p\+Readings }\end{DoxyParamCaption})}
+

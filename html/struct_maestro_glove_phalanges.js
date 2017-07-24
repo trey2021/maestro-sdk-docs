@@ -1,0 +1,26 @@
+var struct_maestro_glove_phalanges =
+[
+    [ "index_distal_displacement", "struct_maestro_glove_phalanges.html#ab8360de608dab76b64bd827ad37b9ca3", null ],
+    [ "index_haptic_motor_amplitude", "struct_maestro_glove_phalanges.html#a5373faa1f9bc2d0357ccea80f2353400", null ],
+    [ "index_proximal_displacement", "struct_maestro_glove_phalanges.html#afc851f9bed16479413ea651466410b20", null ],
+    [ "index_vibration_effect", "struct_maestro_glove_phalanges.html#a10b5d6212646eca8953c0aae842375d2", null ],
+    [ "little_distal_displacement", "struct_maestro_glove_phalanges.html#a0b6ab557049fd52686a3e0e7097228ed", null ],
+    [ "little_haptic_motor_amplitude", "struct_maestro_glove_phalanges.html#aa4f4a00f9647ffed2618335aaeff1b50", null ],
+    [ "little_proximal_displacement", "struct_maestro_glove_phalanges.html#a7b5f1cd24646820c309155815075166b", null ],
+    [ "little_vibration_effect", "struct_maestro_glove_phalanges.html#a2010e9d7dc5d155f47c3232032b40a07", null ],
+    [ "middle_distal_displacement", "struct_maestro_glove_phalanges.html#ab78a80f90e0057772eeb2d17c34be642", null ],
+    [ "middle_haptic_motor_amplitude", "struct_maestro_glove_phalanges.html#a2c0459c16b30fb1d10e7eb6c357d9325", null ],
+    [ "middle_proximal_displacement", "struct_maestro_glove_phalanges.html#a1001780a70c96ba6861eadd59291da7a", null ],
+    [ "middle_vibration_effect", "struct_maestro_glove_phalanges.html#a3b6f00bc4208c3a9b46d8ea958e8a9b1", null ],
+    [ "ring_distal_displacement", "struct_maestro_glove_phalanges.html#a525eb3b2c13125c38d55404323d37f0d", null ],
+    [ "ring_haptic_motor_amplitude", "struct_maestro_glove_phalanges.html#a77e88540c8e7cb5db279f4cce23006e4", null ],
+    [ "ring_proximal_displacement", "struct_maestro_glove_phalanges.html#a84f08e3f05e0d711dbfdfb22fed2220f", null ],
+    [ "ring_vibration_effect", "struct_maestro_glove_phalanges.html#aa6affc7c257dbbd37dc2ed1f0ec28efb", null ],
+    [ "thumb_abduction_displacement", "struct_maestro_glove_phalanges.html#aec82b7b4c402d892dc5602d77f725959", null ],
+    [ "thumb_distal_displacement", "struct_maestro_glove_phalanges.html#a37876d8048e98e396c3485e9b25d0111", null ],
+    [ "thumb_motor_amplitude", "struct_maestro_glove_phalanges.html#a8cc234bcd71e28632c6d815e92c4573a", null ],
+    [ "thumb_proximal_displacement", "struct_maestro_glove_phalanges.html#a41354d5699846c110ccbde25f10b2a6f", null ],
+    [ "thumb_vibration_effect", "struct_maestro_glove_phalanges.html#abc5f24d03d6cbf46eb40a237d196d61e", null ],
+    [ "wrist_abduction_displacement", "struct_maestro_glove_phalanges.html#a0f5cd7360a0a5dfc4ed2c164e8758108", null ],
+    [ "wrist_proximal_displacement", "struct_maestro_glove_phalanges.html#a3dba2ad5e29c82bb998d5df69bd1aa4a", null ]
+];

@@ -1,0 +1,71 @@
+\hypertarget{group__glove_context_access}{}\section{Glove context access functions}
+\label{group__glove_context_access}\index{Glove context access functions@{Glove context access functions}}
+
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}} ~\newline
+ ~\newline
+ These functions are used to get the pointer to a specific glove\textquotesingle{}s context.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__glove_context_access_ga10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service} ()
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer} ()
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_context_access_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer} ()
+\item 
+bool \hyperlink{group__glove_context_access_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected} (intptr\+\_\+t maestro\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}} ~\newline
+ ~\newline
+ These functions are used to get the pointer to a specific glove\textquotesingle{}s context. 
+
+The returned pointers should be stored and passed into all other Maestro A\+PI functions. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}\label{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}} 
+\index{Glove context access functions@{Glove context access functions}!get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}}
+\index{get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}!Glove context access functions@{Glove context access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+left\+\_\+glove\+\_\+pointer()}{get\_left\_glove\_pointer()}}
+{\footnotesize\ttfamily intptr\+\_\+t const get\+\_\+left\+\_\+glove\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The pointer to the left glove context. This value should be passed into other function that set or retrieve values for the left glove. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_context_access_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}\label{group__glove_context_access_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}} 
+\index{Glove context access functions@{Glove context access functions}!get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}}
+\index{get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}!Glove context access functions@{Glove context access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+right\+\_\+glove\+\_\+pointer()}{get\_right\_glove\_pointer()}}
+{\footnotesize\ttfamily intptr\+\_\+t const get\+\_\+right\+\_\+glove\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The pointer to the right glove context. This value should be passed into other functions that set or retrieve values for the right glove. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_context_access_ga85666868951331c5266df7559abeefbc}\label{group__glove_context_access_ga85666868951331c5266df7559abeefbc}} 
+\index{Glove context access functions@{Glove context access functions}!is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}}
+\index{is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}!Glove context access functions@{Glove context access functions}}
+\subsubsection{\texorpdfstring{is\+\_\+glove\+\_\+connected()}{is\_glove\_connected()}}
+{\footnotesize\ttfamily bool is\+\_\+glove\+\_\+connected (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_context_access_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not the glove referenced by {\ttfamily maestro\+Ptr} is connected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_context_access_ga10088517f643220611dfcd5da08bfaa1}\label{group__glove_context_access_ga10088517f643220611dfcd5da08bfaa1}} 
+\index{Glove context access functions@{Glove context access functions}!start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}}
+\index{start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}!Glove context access functions@{Glove context access functions}}
+\subsubsection{\texorpdfstring{start\+\_\+maestro\+\_\+detection\+\_\+service()}{start\_maestro\_detection\_service()}}
+{\footnotesize\ttfamily bool start\+\_\+maestro\+\_\+detection\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start the Maestro glove detection thread. This function must be called in order for the Maestro glove(s) to connect. \begin{DoxyReturn}{Returns}
+Whether or not the detection thread started successfully. 
+\end{DoxyReturn}

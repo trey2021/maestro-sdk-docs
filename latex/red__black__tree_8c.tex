@@ -1,0 +1,75 @@
+\hypertarget{red__black__tree_8c}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/red\+\_\+black\+\_\+tree.c File Reference}
+\label{red__black__tree_8c}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/red\+\_\+black\+\_\+tree.\+c@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/red\+\_\+black\+\_\+tree.\+c}}
+{\ttfamily \#include \char`\"{}red\+\_\+black\+\_\+tree.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$ \hyperlink{red__black__tree_8c_a096874a3c67c6640da6d15c3cd728ce7}{rb\+\_\+tree\+\_\+create} ()
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8c_a23f01e4c3865f79083df44ebb100a968}{rb\+\_\+insert} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree, int key, int value)
+\item 
+void \hyperlink{red__black__tree_8c_aad3fa651b452bd8633391e0f864e41c7}{rb\+\_\+destroy} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree)
+\item 
+void \hyperlink{red__black__tree_8c_a5674e9121fdb31400d6857254a10d740}{rb\+\_\+print} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8c_a86423465d61844fed0d444d7ffc315a3}{rb\+\_\+find} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree, int f)
+\item 
+void \hyperlink{red__black__tree_8c_a96c87ff8a50edbb01a25416acbc6ea31}{rb\+\_\+enumerate} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree, \hyperlink{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}{rb\+\_\+enumerate\+\_\+function} func)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8c_a8ac8199e1a73c5cd843eb5a10e791804}{rb\+\_\+min} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8c_a891c53d6373db073ce9c182e2812343e}{rb\+\_\+max} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$tree)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{red__black__tree_8c_aad3fa651b452bd8633391e0f864e41c7}\label{red__black__tree_8c_aad3fa651b452bd8633391e0f864e41c7}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+destroy@{rb\+\_\+destroy}}
+\index{rb\+\_\+destroy@{rb\+\_\+destroy}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+destroy()}{rb\_destroy()}}
+{\footnotesize\ttfamily void rb\+\_\+destroy (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a96c87ff8a50edbb01a25416acbc6ea31}\label{red__black__tree_8c_a96c87ff8a50edbb01a25416acbc6ea31}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+enumerate@{rb\+\_\+enumerate}}
+\index{rb\+\_\+enumerate@{rb\+\_\+enumerate}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+enumerate()}{rb\_enumerate()}}
+{\footnotesize\ttfamily void rb\+\_\+enumerate (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree,  }\item[{\hyperlink{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}{rb\+\_\+enumerate\+\_\+function}}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a86423465d61844fed0d444d7ffc315a3}\label{red__black__tree_8c_a86423465d61844fed0d444d7ffc315a3}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+find@{rb\+\_\+find}}
+\index{rb\+\_\+find@{rb\+\_\+find}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+find()}{rb\_find()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+find (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree,  }\item[{int}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a23f01e4c3865f79083df44ebb100a968}\label{red__black__tree_8c_a23f01e4c3865f79083df44ebb100a968}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+insert@{rb\+\_\+insert}}
+\index{rb\+\_\+insert@{rb\+\_\+insert}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+insert()}{rb\_insert()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+insert (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree,  }\item[{int}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a891c53d6373db073ce9c182e2812343e}\label{red__black__tree_8c_a891c53d6373db073ce9c182e2812343e}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+max@{rb\+\_\+max}}
+\index{rb\+\_\+max@{rb\+\_\+max}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+max()}{rb\_max()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+max (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a8ac8199e1a73c5cd843eb5a10e791804}\label{red__black__tree_8c_a8ac8199e1a73c5cd843eb5a10e791804}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+min@{rb\+\_\+min}}
+\index{rb\+\_\+min@{rb\+\_\+min}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+min()}{rb\_min()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+min (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a5674e9121fdb31400d6857254a10d740}\label{red__black__tree_8c_a5674e9121fdb31400d6857254a10d740}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+print@{rb\+\_\+print}}
+\index{rb\+\_\+print@{rb\+\_\+print}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+print()}{rb\_print()}}
+{\footnotesize\ttfamily void rb\+\_\+print (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8c_a096874a3c67c6640da6d15c3cd728ce7}\label{red__black__tree_8c_a096874a3c67c6640da6d15c3cd728ce7}} 
+\index{red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}!rb\+\_\+tree\+\_\+create@{rb\+\_\+tree\+\_\+create}}
+\index{rb\+\_\+tree\+\_\+create@{rb\+\_\+tree\+\_\+create}!red\+\_\+black\+\_\+tree.\+c@{red\+\_\+black\+\_\+tree.\+c}}
+\subsubsection{\texorpdfstring{rb\+\_\+tree\+\_\+create()}{rb\_tree\_create()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree}$\ast$ rb\+\_\+tree\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

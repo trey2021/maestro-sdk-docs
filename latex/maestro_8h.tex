@@ -1,0 +1,302 @@
+\hypertarget{maestro_8h}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/maestro.h File Reference}
+\label{maestro_8h}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/maestro.\+h@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/maestro.\+h}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}red\+\_\+black\+\_\+tree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}linear\+\_\+regression.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}detection.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_maestro_glove_phalanges}{Maestro\+Glove\+Phalanges}
+\item 
+struct \hyperlink{struct_arduino_context}{Arduino\+Context}
+\item 
+struct \hyperlink{struct_rotation_configuration}{Rotation\+Configuration}
+\item 
+struct \hyperlink{struct___calibration_phalange}{\+\_\+\+Calibration\+Phalange}
+\item 
+struct \hyperlink{struct_calibration_flex}{Calibration\+Flex}
+\item 
+struct \hyperlink{struct_calibration_context}{Calibration\+Context}
+\item 
+struct \hyperlink{struct_maestro_glove}{Maestro\+Glove}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{maestro_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+\item 
+\#define \hyperlink{maestro_8h_a02312291bf895b05d693998097f8a244}{M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}
+\item 
+\#define \hyperlink{maestro_8h_ac003eac8ce74a07b61a35fddfb07a693}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}
+\item 
+\#define \hyperlink{maestro_8h_a0e26ea2db1b570d1a6fe1ac180ef4541}{H\+O\+ME}~getenv(\char`\"{}H\+O\+ME\char`\"{})
+\item 
+\#define \hyperlink{maestro_8h_abf3c1eb7ff63a22749f9d60ff5ea4ec7}{M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS}~0
+\item 
+\#define \hyperlink{maestro_8h_aa93b581f939949fef8e6b7af52a30cde}{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG}~1
+\item 
+\#define \hyperlink{maestro_8h_a35cb1db6efd3e7e4956721794a831a6e}{M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE}~2
+\item 
+\#define \hyperlink{maestro_8h_ab14957172c2432b3442429c7214c46b0}{M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}~3
+\item 
+\#define \hyperlink{maestro_8h_a94dfd30c30ee22af04f9b8522d460248}{M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}~4
+\item 
+\#define \hyperlink{maestro_8h_a9a343e9172c9f4ae6203f865b0ff75af}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}~5
+\item 
+\#define \hyperlink{maestro_8h_aa54d3abe29a8ff81cbf594e34c871024}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG}~6
+\item 
+\#define \hyperlink{maestro_8h_ad8f13e1ead896feef226103620c72f80}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}~7
+\item 
+\#define \hyperlink{maestro_8h_ab46987722b5bb5c23f41e04a502bd631}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID}~8
+\item 
+\#define \hyperlink{maestro_8h_a9032a6221a08459bc2534d8a62abd023}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS}~9
+\item 
+\#define \hyperlink{maestro_8h_a43f014c53136a26cdd2242e7298cef30}{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID}~10
+\item 
+\#define \hyperlink{maestro_8h_ac6f0f82f47a7aad8c04e02fdb4d156d2}{L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}~\char`\"{}left\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt\char`\"{}
+\item 
+\#define \hyperlink{maestro_8h_a4e2b5f8550d1dee3d7f988272a3962df}{R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}~\char`\"{}right\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_maestro_glove}{Maestro\+Glove} \hyperlink{maestro_8h_adcb6dfd8e7c793f2a6107cf04182c6d4}{Maestro\+Glove}
+\item 
+typedef void($\ast$ \hyperlink{maestro_8h_af5aa626ca28c2c60d6df17f73d397915}{Poll\+Maestro\+Func}) (\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$)
+\item 
+typedef struct \hyperlink{struct___calibration_phalange}{\+\_\+\+Calibration\+Phalange} \hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__glove_calibration_ga18322d42315fec2f2ace331d02779bc9}{start\+\_\+wrist\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__glove_calibration_ga16f7a149bdb18fcd658b58561d77c611}{end\+\_\+wrist\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__glove_calibration_ga56b6ade8919ab37c7a5a92baf4ac1381}{start\+\_\+proximal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__glove_calibration_ga61fff68a5b13787d5cd363dc83a8af63}{end\+\_\+proximal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__glove_calibration_ga2ad4605486742a300e1f20f8f238f83a}{start\+\_\+distal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__glove_calibration_ga9dbe2731bdb001da7ca6ed582d5cb494}{end\+\_\+distal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_context_access_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer} ()
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_context_access_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer} ()
+\item 
+bool \hyperlink{group__glove_context_access_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaa1bfb69dab314ccf7e6dc1df6d3657bc}{get\+\_\+index\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gac9901dae93434d4fc030170a45fae2f1}{get\+\_\+index\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaca7b0c2eacb336f7214292cfc7d4098f}{get\+\_\+middle\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gabcd534e7e94fcbb7b35ce0406dd500bd}{get\+\_\+middle\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gab0ff4384ff3e86eec80add30c96939e3}{get\+\_\+ring\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga61acc449d1bb171722abef39f2c9d8bf}{get\+\_\+ring\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga4c8a12c14e6b292b513ac52fd0ab21cb}{get\+\_\+little\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga010054a4a8e649390d426732de2e8792}{get\+\_\+little\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaf094ab423a9858746786b6a984ec031f}{get\+\_\+thumb\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaed15e3a23d0b98f46f78d7dadca62668}{get\+\_\+thumb\+\_\+abduction\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga86d0adfde28a3008a21fb4620e4b93df}{get\+\_\+thumb\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gab799e09f1b944ca87b1567a9a9ae2ee4}{get\+\_\+wrist\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga1c85e2b98b4d884226c3d9c41cab209f}{get\+\_\+wrist\+\_\+abduction\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga7d2da9a343911275b4343c2904c0f92a}{get\+\_\+index\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga00e2691df05ed045e6f2ec02082d941c}{get\+\_\+index\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gaddec3e0d8d07788424fc1d9b202472c4}{get\+\_\+middle\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gab9cbb79e5f1b47bd20c079d636b825f0}{get\+\_\+middle\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga684f53b38b169aaab88de85578387a38}{get\+\_\+ring\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga2941894deaa99df80b74f33c824bbb07}{get\+\_\+ring\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga4e5835f8eae4b89728219b50ff20259b}{get\+\_\+little\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga92c96531688ae5be50890e7883eccd05}{get\+\_\+little\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga47f787dada77cf7f4f39ebf245aec420}{get\+\_\+thumb\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga2dddb1473cdf463238904595e309938f}{get\+\_\+thumb\+\_\+abduction\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gafc4acff90b0a11899e18ab2212ec6ce2}{get\+\_\+thumb\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}{get\+\_\+wrist\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__vibration_control_ga2cade8fb792cc25e14176898ba9b70d5}{set\+\_\+thumb\+\_\+vibration\+\_\+effect} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t effect)
+\item 
+void \hyperlink{group__vibration_control_ga1574bdd826660ba522e6a9e527b912d5}{set\+\_\+index\+\_\+vibration\+\_\+effect} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t effect)
+\item 
+void \hyperlink{group__vibration_control_gac5e818c55bae4cc053575cf56da645f6}{set\+\_\+middle\+\_\+vibration\+\_\+effect} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t effect)
+\item 
+void \hyperlink{group__vibration_control_ga8fbe7c8a6e2d9566023c31d0da891d74}{set\+\_\+ring\+\_\+vibration\+\_\+effect} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t effect)
+\item 
+void \hyperlink{group__vibration_control_gacfdcd1bab70eb2248b3e94c7653516f2}{set\+\_\+little\+\_\+vibration\+\_\+effect} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t effect)
+\item 
+void \hyperlink{group__force_feedback_control_ga3ed1d2dab41095517bbb4f9fa712dc30}{set\+\_\+thumb\+\_\+haptic\+\_\+motors\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_gaf902793cd49c844f3ab5767715fd48ee}{set\+\_\+index\+\_\+haptic\+\_\+motors\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_gace5cc19f9b7c8d2498047dc73b85d90e}{set\+\_\+middle\+\_\+haptic\+\_\+motors\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_gafed7e18a1fe10cbeb677ea8607c3871f}{set\+\_\+ring\+\_\+haptic\+\_\+motors\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_ga369d4a2d505013b338e941cafc50c416}{set\+\_\+little\+\_\+haptic\+\_\+motors\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+bool \hyperlink{maestro_8h_a10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{maestro_8h_a0e26ea2db1b570d1a6fe1ac180ef4541}\label{maestro_8h_a0e26ea2db1b570d1a6fe1ac180ef4541}} 
+\index{maestro.\+h@{maestro.\+h}!H\+O\+ME@{H\+O\+ME}}
+\index{H\+O\+ME@{H\+O\+ME}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{H\+O\+ME}{HOME}}
+{\footnotesize\ttfamily \#define H\+O\+ME~getenv(\char`\"{}H\+O\+ME\char`\"{})}
+
+\mbox{\Hypertarget{maestro_8h_ac6f0f82f47a7aad8c04e02fdb4d156d2}\label{maestro_8h_ac6f0f82f47a7aad8c04e02fdb4d156d2}} 
+\index{maestro.\+h@{maestro.\+h}!L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE@{L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}}
+\index{L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE@{L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}{LEFT\_MAESTRO\_MOTION\_RANGES\_FILE}}
+{\footnotesize\ttfamily \#define L\+E\+F\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE~\char`\"{}left\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{maestro_8h_aa93b581f939949fef8e6b7af52a30cde}\label{maestro_8h_aa93b581f939949fef8e6b7af52a30cde}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG}{MAESTRO\_ALREADY\_RUNNING}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+R\+U\+N\+N\+I\+NG~1}
+
+\mbox{\Hypertarget{maestro_8h_ac003eac8ce74a07b61a35fddfb07a693}\label{maestro_8h_ac003eac8ce74a07b61a35fddfb07a693}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI@{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}{MAESTRO\_API}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+A\+PI}
+
+\mbox{\Hypertarget{maestro_8h_a02312291bf895b05d693998097f8a244}\label{maestro_8h_a02312291bf895b05d693998097f8a244}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C@{M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C@{M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}{MAESTRO\_EXTERN\_C}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+E\+X\+T\+E\+R\+N\+\_\+C}
+
+\mbox{\Hypertarget{maestro_8h_a9a343e9172c9f4ae6203f865b0ff75af}\label{maestro_8h_a9a343e9172c9f4ae6203f865b0ff75af}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}{MAESTRO\_MOTION\_RANGES\_FILE\_ACCESS\_FAILED}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED~5}
+
+\mbox{\Hypertarget{maestro_8h_ad8f13e1ead896feef226103620c72f80}\label{maestro_8h_ad8f13e1ead896feef226103620c72f80}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}{MAESTRO\_MOTION\_RANGES\_FILE\_ENTRY\_INVALID}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+V\+A\+L\+ID~7}
+
+\mbox{\Hypertarget{maestro_8h_aa54d3abe29a8ff81cbf594e34c871024}\label{maestro_8h_aa54d3abe29a8ff81cbf594e34c871024}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG}{MAESTRO\_MOTION\_RANGES\_FILE\_ENTRY\_MISSING}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+M\+I\+S\+S\+I\+NG~6}
+
+\mbox{\Hypertarget{maestro_8h_a43f014c53136a26cdd2242e7298cef30}\label{maestro_8h_a43f014c53136a26cdd2242e7298cef30}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID}{MAESTRO\_MOTION\_RANGES\_FILE\_JOINT\_NAME\_INVALID}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+N\+A\+M\+E\+\_\+\+I\+N\+V\+A\+L\+ID~10}
+
+\mbox{\Hypertarget{maestro_8h_a9032a6221a08459bc2534d8a62abd023}\label{maestro_8h_a9032a6221a08459bc2534d8a62abd023}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS}{MAESTRO\_MOTION\_RANGES\_FILE\_RANGE\_BACKWARDS}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+B\+A\+C\+K\+W\+A\+R\+DS~9}
+
+\mbox{\Hypertarget{maestro_8h_ab46987722b5bb5c23f41e04a502bd631}\label{maestro_8h_ab46987722b5bb5c23f41e04a502bd631}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID@{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID}{MAESTRO\_MOTION\_RANGES\_FILE\_RANGE\_INVALID}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+L\+E\+\_\+\+R\+A\+N\+G\+E\+\_\+\+I\+N\+V\+A\+L\+ID~8}
+
+\mbox{\Hypertarget{maestro_8h_a35cb1db6efd3e7e4956721794a831a6e}\label{maestro_8h_a35cb1db6efd3e7e4956721794a831a6e}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE@{M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE@{M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE}{MAESTRO\_NO\_ARDUINO\_HANDLE}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+N\+O\+\_\+\+A\+R\+D\+U\+I\+N\+O\+\_\+\+H\+A\+N\+D\+LE~2}
+
+\mbox{\Hypertarget{maestro_8h_a94dfd30c30ee22af04f9b8522d460248}\label{maestro_8h_a94dfd30c30ee22af04f9b8522d460248}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED}{MAESTRO\_PORTS\_FILE\_ACCESS\_FAILED}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+P\+O\+R\+T\+S\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+F\+A\+I\+L\+ED~4}
+
+\mbox{\Hypertarget{maestro_8h_abf3c1eb7ff63a22749f9d60ff5ea4ec7}\label{maestro_8h_abf3c1eb7ff63a22749f9d60ff5ea4ec7}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS@{M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS@{M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS}{MAESTRO\_SUCCESS}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+S\+U\+C\+C\+E\+SS~0}
+
+\mbox{\Hypertarget{maestro_8h_ab14957172c2432b3442429c7214c46b0}\label{maestro_8h_ab14957172c2432b3442429c7214c46b0}} 
+\index{maestro.\+h@{maestro.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED@{M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}{MAESTRO\_THREAD\_CREATION\_FAILED}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+C\+R\+E\+A\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED~3}
+
+\mbox{\Hypertarget{maestro_8h_a4e2b5f8550d1dee3d7f988272a3962df}\label{maestro_8h_a4e2b5f8550d1dee3d7f988272a3962df}} 
+\index{maestro.\+h@{maestro.\+h}!R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE@{R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}}
+\index{R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE@{R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE}{RIGHT\_MAESTRO\_MOTION\_RANGES\_FILE}}
+{\footnotesize\ttfamily \#define R\+I\+G\+H\+T\+\_\+\+M\+A\+E\+S\+T\+R\+O\+\_\+\+M\+O\+T\+I\+O\+N\+\_\+\+R\+A\+N\+G\+E\+S\+\_\+\+F\+I\+LE~\char`\"{}right\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{maestro_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}\label{maestro_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}} 
+\index{maestro.\+h@{maestro.\+h}!W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}}
+\index{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}{WIN32\_LEAN\_AND\_MEAN}}
+{\footnotesize\ttfamily \#define W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{maestro_8h_a09681c098cfa56729e216f222d0486b2}\label{maestro_8h_a09681c098cfa56729e216f222d0486b2}} 
+\index{maestro.\+h@{maestro.\+h}!Calibration\+Phalange@{Calibration\+Phalange}}
+\index{Calibration\+Phalange@{Calibration\+Phalange}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{Calibration\+Phalange}{CalibrationPhalange}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct___calibration_phalange}{\+\_\+\+Calibration\+Phalange}  \hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange}}
+
+\mbox{\Hypertarget{maestro_8h_adcb6dfd8e7c793f2a6107cf04182c6d4}\label{maestro_8h_adcb6dfd8e7c793f2a6107cf04182c6d4}} 
+\index{maestro.\+h@{maestro.\+h}!Maestro\+Glove@{Maestro\+Glove}}
+\index{Maestro\+Glove@{Maestro\+Glove}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{Maestro\+Glove}{MaestroGlove}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_maestro_glove}{Maestro\+Glove} \hyperlink{struct_maestro_glove}{Maestro\+Glove}}
+
+\mbox{\Hypertarget{maestro_8h_af5aa626ca28c2c60d6df17f73d397915}\label{maestro_8h_af5aa626ca28c2c60d6df17f73d397915}} 
+\index{maestro.\+h@{maestro.\+h}!Poll\+Maestro\+Func@{Poll\+Maestro\+Func}}
+\index{Poll\+Maestro\+Func@{Poll\+Maestro\+Func}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{Poll\+Maestro\+Func}{PollMaestroFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ Poll\+Maestro\+Func) (\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{maestro_8h_a10088517f643220611dfcd5da08bfaa1}\label{maestro_8h_a10088517f643220611dfcd5da08bfaa1}} 
+\index{maestro.\+h@{maestro.\+h}!start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}}
+\index{start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}!maestro.\+h@{maestro.\+h}}
+\subsubsection{\texorpdfstring{start\+\_\+maestro\+\_\+detection\+\_\+service()}{start\_maestro\_detection\_service()}}
+{\footnotesize\ttfamily bool start\+\_\+maestro\+\_\+detection\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start the Maestro glove detection thread. This function must be called in order for the Maestro glove(s) to connect. \begin{DoxyReturn}{Returns}
+Whether or not the detection thread started successfully. 
+\end{DoxyReturn}

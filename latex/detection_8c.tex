@@ -1,0 +1,32 @@
+\hypertarget{detection_8c}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/detection.c File Reference}
+\label{detection_8c}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/detection.\+c@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/detection.\+c}}
+{\ttfamily \#include \char`\"{}detection.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}packet\+\_\+detection.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arduino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}arduino\+\_\+usb.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Dbt.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$logging.\+h$>$}\newline
+{\ttfamily \#include $<$packet/packet.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{detection_8c_a5a0d88778a1d0875603fe553944c37eb}{start\+\_\+glove\+\_\+detection\+\_\+thread} (\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func} on\+\_\+connect, \hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func} on\+\_\+disconnect)
+\item 
+\hyperlink{struct_detection_packet}{Detection\+Packet} \hyperlink{detection_8c_ac1b44b089b72bc6e8f22efb74a2219e9}{find\+\_\+maestro\+\_\+arduino} (wchar\+\_\+t $\ast$port, H\+A\+N\+D\+LE $\ast$p\+Handle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{detection_8c_ac1b44b089b72bc6e8f22efb74a2219e9}\label{detection_8c_ac1b44b089b72bc6e8f22efb74a2219e9}} 
+\index{detection.\+c@{detection.\+c}!find\+\_\+maestro\+\_\+arduino@{find\+\_\+maestro\+\_\+arduino}}
+\index{find\+\_\+maestro\+\_\+arduino@{find\+\_\+maestro\+\_\+arduino}!detection.\+c@{detection.\+c}}
+\subsubsection{\texorpdfstring{find\+\_\+maestro\+\_\+arduino()}{find\_maestro\_arduino()}}
+{\footnotesize\ttfamily \hyperlink{struct_detection_packet}{Detection\+Packet} find\+\_\+maestro\+\_\+arduino (\begin{DoxyParamCaption}\item[{wchar\+\_\+t $\ast$}]{port,  }\item[{H\+A\+N\+D\+LE $\ast$}]{p\+Handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{detection_8c_a5a0d88778a1d0875603fe553944c37eb}\label{detection_8c_a5a0d88778a1d0875603fe553944c37eb}} 
+\index{detection.\+c@{detection.\+c}!start\+\_\+glove\+\_\+detection\+\_\+thread@{start\+\_\+glove\+\_\+detection\+\_\+thread}}
+\index{start\+\_\+glove\+\_\+detection\+\_\+thread@{start\+\_\+glove\+\_\+detection\+\_\+thread}!detection.\+c@{detection.\+c}}
+\subsubsection{\texorpdfstring{start\+\_\+glove\+\_\+detection\+\_\+thread()}{start\_glove\_detection\_thread()}}
+{\footnotesize\ttfamily bool start\+\_\+glove\+\_\+detection\+\_\+thread (\begin{DoxyParamCaption}\item[{\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func}}]{on\+\_\+connect,  }\item[{\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func}}]{on\+\_\+disconnect }\end{DoxyParamCaption})}
+

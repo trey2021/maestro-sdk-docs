@@ -1,0 +1,32 @@
+\hypertarget{struct_maestro_glove_context}{}\section{Maestro\+Glove\+Context Struct Reference}
+\label{struct_maestro_glove_context}\index{Maestro\+Glove\+Context@{Maestro\+Glove\+Context}}
+
+
+A structure containing vibration, force feedback, raw displacement data, and whether the glove is connected.  
+
+
+
+
+{\ttfamily \#include \char`\"{}maestro\+\_\+types.\+h\char`\"{}}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_maestro_glove_context_ab854be82f90a440600e7b98156b4add0}\label{struct_maestro_glove_context_ab854be82f90a440600e7b98156b4add0}} 
+volatile \hyperlink{struct_displacement_context}{Displacement\+Context} \hyperlink{struct_maestro_glove_context_ab854be82f90a440600e7b98156b4add0}{displacement\+Context}
+\begin{DoxyCompactList}\small\item\em The displacement context for the glove. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_maestro_glove_context_aaea0ce977d0cbc493305f6cb52f6d8e9}\label{struct_maestro_glove_context_aaea0ce977d0cbc493305f6cb52f6d8e9}} 
+volatile \hyperlink{struct_vibration_context}{Vibration\+Context} \hyperlink{struct_maestro_glove_context_aaea0ce977d0cbc493305f6cb52f6d8e9}{vibration\+Context}
+\begin{DoxyCompactList}\small\item\em The vibration context for the glove. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_maestro_glove_context_a42bb0346f24c9e5e078b430af447121f}\label{struct_maestro_glove_context_a42bb0346f24c9e5e078b430af447121f}} 
+volatile \hyperlink{struct_force_feedback_context}{Force\+Feedback\+Context} \hyperlink{struct_maestro_glove_context_a42bb0346f24c9e5e078b430af447121f}{force\+Feedback\+Context}
+\begin{DoxyCompactList}\small\item\em The force feedback for the glove. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_maestro_glove_context_a95cbd6b99430748422cc048b4f29dc52}\label{struct_maestro_glove_context_a95cbd6b99430748422cc048b4f29dc52}} 
+bool \hyperlink{struct_maestro_glove_context_a95cbd6b99430748422cc048b4f29dc52}{is\+\_\+running}
+\begin{DoxyCompactList}\small\item\em Whether or not the glove is running. This is the same value returned by {\ttfamily \hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A structure containing vibration, force feedback, raw displacement data, and whether the glove is connected. 
+
+See {\ttfamily \hyperlink{struct_displacement_context}{Displacement\+Context}}, {\ttfamily \hyperlink{struct_vibration_context}{Vibration\+Context}}, and {\ttfamily \hyperlink{struct_vibration_context}{Vibration\+Context}}. 

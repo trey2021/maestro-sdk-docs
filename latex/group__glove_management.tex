@@ -1,0 +1,85 @@
+\hypertarget{group__glove_management}{}\section{Glove management functions}
+\label{group__glove_management}\index{Glove management functions@{Glove management functions}}
+
+
+These functions are used to manage and reference the Maestro gloves.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service} ()
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer} ()
+\item 
+intptr\+\_\+t const \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer} ()
+\item 
+bool \hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected} (intptr\+\_\+t maestro\+Ptr)
+\item 
+const \hyperlink{struct_maestro_glove_context}{Maestro\+Glove\+Context} $\ast$const \hyperlink{group__glove_management_gab83c1dd0e2c4ba3073b928b76174e2a5}{get\+\_\+glove\+\_\+context} (intptr\+\_\+t maestro\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to manage and reference the Maestro gloves. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}}
+
+{\ttfamily \hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service()}} must be called before calibration, haptics, or any motion capture data can be used. The returned pointers should be stored and passed into all other Maestro A\+PI functions. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__glove_management_gab83c1dd0e2c4ba3073b928b76174e2a5}\label{group__glove_management_gab83c1dd0e2c4ba3073b928b76174e2a5}} 
+\index{Glove management functions@{Glove management functions}!get\+\_\+glove\+\_\+context@{get\+\_\+glove\+\_\+context}}
+\index{get\+\_\+glove\+\_\+context@{get\+\_\+glove\+\_\+context}!Glove management functions@{Glove management functions}}
+\subsubsection{\texorpdfstring{get\+\_\+glove\+\_\+context()}{get\_glove\_context()}}
+{\footnotesize\ttfamily const \hyperlink{struct_maestro_glove_context}{Maestro\+Glove\+Context}$\ast$ const get\+\_\+glove\+\_\+context (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current Maestro data. This returns a struct containing the same values acquired by calling {\ttfamily \hyperlink{group__displacement_access_ga26563f1c104bd9a0d80ab8c0afd1e8bd}{get\+\_\+displacement\+\_\+context()}}, {\ttfamily \hyperlink{group__vibration_control_ga578e2f96e86827fd32c9e8e181cf4c64}{get\+\_\+vibration\+\_\+context()}}, {\ttfamily \hyperlink{group__force_feedback_control_ga6017d2145085cfc8f6d455a29006a640}{get\+\_\+force\+\_\+feedback\+\_\+context()}}, and {\ttfamily \hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected()}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}\label{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}} 
+\index{Glove management functions@{Glove management functions}!get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}}
+\index{get\+\_\+left\+\_\+glove\+\_\+pointer@{get\+\_\+left\+\_\+glove\+\_\+pointer}!Glove management functions@{Glove management functions}}
+\subsubsection{\texorpdfstring{get\+\_\+left\+\_\+glove\+\_\+pointer()}{get\_left\_glove\_pointer()}}
+{\footnotesize\ttfamily intptr\+\_\+t const get\+\_\+left\+\_\+glove\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The pointer to the left glove context. This value should be passed into other function that set or retrieve values for the left glove. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}\label{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}} 
+\index{Glove management functions@{Glove management functions}!get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}}
+\index{get\+\_\+right\+\_\+glove\+\_\+pointer@{get\+\_\+right\+\_\+glove\+\_\+pointer}!Glove management functions@{Glove management functions}}
+\subsubsection{\texorpdfstring{get\+\_\+right\+\_\+glove\+\_\+pointer()}{get\_right\_glove\_pointer()}}
+{\footnotesize\ttfamily intptr\+\_\+t const get\+\_\+right\+\_\+glove\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The pointer to the right glove context. This value should be passed into other functions that set or retrieve values for the right glove. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_management_ga85666868951331c5266df7559abeefbc}\label{group__glove_management_ga85666868951331c5266df7559abeefbc}} 
+\index{Glove management functions@{Glove management functions}!is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}}
+\index{is\+\_\+glove\+\_\+connected@{is\+\_\+glove\+\_\+connected}!Glove management functions@{Glove management functions}}
+\subsubsection{\texorpdfstring{is\+\_\+glove\+\_\+connected()}{is\_glove\_connected()}}
+{\footnotesize\ttfamily bool is\+\_\+glove\+\_\+connected (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not the glove referenced by {\ttfamily maestro\+Ptr} is connected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}\label{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}} 
+\index{Glove management functions@{Glove management functions}!start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}}
+\index{start\+\_\+maestro\+\_\+detection\+\_\+service@{start\+\_\+maestro\+\_\+detection\+\_\+service}!Glove management functions@{Glove management functions}}
+\subsubsection{\texorpdfstring{start\+\_\+maestro\+\_\+detection\+\_\+service()}{start\_maestro\_detection\_service()}}
+{\footnotesize\ttfamily bool start\+\_\+maestro\+\_\+detection\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start the Maestro glove detection thread. This function must be called in order for the Maestro glove(s) to connect. This will spawn a new thread that manages the connecting and disconnecting of Maestro gloves. \begin{DoxyReturn}{Returns}
+Whether or not the detection thread started successfully. 
+\end{DoxyReturn}

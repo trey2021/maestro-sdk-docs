@@ -1,0 +1,228 @@
+\hypertarget{group__displacement_access}{}\section{Hand displacements access functions}
+\label{group__displacement_access}\index{Hand displacements access functions@{Hand displacements access functions}}
+
+
+These functions are used to get raw displacement data for specific hand and finger joints.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{group__displacement_access_gaa1bfb69dab314ccf7e6dc1df6d3657bc}{get\+\_\+index\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gac9901dae93434d4fc030170a45fae2f1}{get\+\_\+index\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaca7b0c2eacb336f7214292cfc7d4098f}{get\+\_\+middle\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gabcd534e7e94fcbb7b35ce0406dd500bd}{get\+\_\+middle\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gab0ff4384ff3e86eec80add30c96939e3}{get\+\_\+ring\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga61acc449d1bb171722abef39f2c9d8bf}{get\+\_\+ring\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga4c8a12c14e6b292b513ac52fd0ab21cb}{get\+\_\+little\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga010054a4a8e649390d426732de2e8792}{get\+\_\+little\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaf094ab423a9858746786b6a984ec031f}{get\+\_\+thumb\+\_\+distal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gaed15e3a23d0b98f46f78d7dadca62668}{get\+\_\+thumb\+\_\+abduction\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_ga86d0adfde28a3008a21fb4620e4b93df}{get\+\_\+thumb\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__displacement_access_gab799e09f1b944ca87b1567a9a9ae2ee4}{get\+\_\+wrist\+\_\+proximal\+\_\+displacement} (intptr\+\_\+t maestro\+Ptr)
+\item 
+const \hyperlink{struct_displacement_context}{Displacement\+Context} $\ast$const \hyperlink{group__displacement_access_ga26563f1c104bd9a0d80ab8c0afd1e8bd}{get\+\_\+displacement\+\_\+context} (intptr\+\_\+t maestro\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to get raw displacement data for specific hand and finger joints. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}}
+
+The displacements will always be in the inclusive range of (0, 1023). 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__displacement_access_ga26563f1c104bd9a0d80ab8c0afd1e8bd}\label{group__displacement_access_ga26563f1c104bd9a0d80ab8c0afd1e8bd}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+displacement\+\_\+context@{get\+\_\+displacement\+\_\+context}}
+\index{get\+\_\+displacement\+\_\+context@{get\+\_\+displacement\+\_\+context}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+displacement\+\_\+context()}{get\_displacement\_context()}}
+{\footnotesize\ttfamily const \hyperlink{struct_displacement_context}{Displacement\+Context}$\ast$ const get\+\_\+displacement\+\_\+context (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current displacements from the hardware. This returns a struct containing the same values acquired by the individual {\ttfamily get\+\_\+...\+\_\+displacement()} functions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gac9901dae93434d4fc030170a45fae2f1}\label{group__displacement_access_gac9901dae93434d4fc030170a45fae2f1}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+index\+\_\+distal\+\_\+displacement@{get\+\_\+index\+\_\+distal\+\_\+displacement}}
+\index{get\+\_\+index\+\_\+distal\+\_\+displacement@{get\+\_\+index\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+distal\+\_\+displacement()}{get\_index\_distal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+distal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the index finger distal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gaa1bfb69dab314ccf7e6dc1df6d3657bc}\label{group__displacement_access_gaa1bfb69dab314ccf7e6dc1df6d3657bc}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+index\+\_\+proximal\+\_\+displacement@{get\+\_\+index\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+index\+\_\+proximal\+\_\+displacement@{get\+\_\+index\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+proximal\+\_\+displacement()}{get\_index\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the index finger proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_ga4c8a12c14e6b292b513ac52fd0ab21cb}\label{group__displacement_access_ga4c8a12c14e6b292b513ac52fd0ab21cb}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+little\+\_\+distal\+\_\+displacement@{get\+\_\+little\+\_\+distal\+\_\+displacement}}
+\index{get\+\_\+little\+\_\+distal\+\_\+displacement@{get\+\_\+little\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+distal\+\_\+displacement()}{get\_little\_distal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+distal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the little (pinky) finger distal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_ga010054a4a8e649390d426732de2e8792}\label{group__displacement_access_ga010054a4a8e649390d426732de2e8792}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+little\+\_\+proximal\+\_\+displacement@{get\+\_\+little\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+little\+\_\+proximal\+\_\+displacement@{get\+\_\+little\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+proximal\+\_\+displacement()}{get\_little\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the little (pinky) finger proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gaca7b0c2eacb336f7214292cfc7d4098f}\label{group__displacement_access_gaca7b0c2eacb336f7214292cfc7d4098f}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+middle\+\_\+distal\+\_\+displacement@{get\+\_\+middle\+\_\+distal\+\_\+displacement}}
+\index{get\+\_\+middle\+\_\+distal\+\_\+displacement@{get\+\_\+middle\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+distal\+\_\+displacement()}{get\_middle\_distal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+distal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the middle finger distal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gabcd534e7e94fcbb7b35ce0406dd500bd}\label{group__displacement_access_gabcd534e7e94fcbb7b35ce0406dd500bd}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+middle\+\_\+proximal\+\_\+displacement@{get\+\_\+middle\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+middle\+\_\+proximal\+\_\+displacement@{get\+\_\+middle\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+proximal\+\_\+displacement()}{get\_middle\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the middle finger proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gab0ff4384ff3e86eec80add30c96939e3}\label{group__displacement_access_gab0ff4384ff3e86eec80add30c96939e3}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+ring\+\_\+distal\+\_\+displacement@{get\+\_\+ring\+\_\+distal\+\_\+displacement}}
+\index{get\+\_\+ring\+\_\+distal\+\_\+displacement@{get\+\_\+ring\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+distal\+\_\+displacement()}{get\_ring\_distal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+distal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the ring finger distal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_ga61acc449d1bb171722abef39f2c9d8bf}\label{group__displacement_access_ga61acc449d1bb171722abef39f2c9d8bf}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+ring\+\_\+proximal\+\_\+displacement@{get\+\_\+ring\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+ring\+\_\+proximal\+\_\+displacement@{get\+\_\+ring\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+proximal\+\_\+displacement()}{get\_ring\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the ring finger proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gaed15e3a23d0b98f46f78d7dadca62668}\label{group__displacement_access_gaed15e3a23d0b98f46f78d7dadca62668}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+abduction\+\_\+displacement@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement}}
+\index{get\+\_\+thumb\+\_\+abduction\+\_\+displacement@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+abduction\+\_\+displacement()}{get\_thumb\_abduction\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+abduction\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the thumb abduction joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gaf094ab423a9858746786b6a984ec031f}\label{group__displacement_access_gaf094ab423a9858746786b6a984ec031f}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+distal\+\_\+displacement@{get\+\_\+thumb\+\_\+distal\+\_\+displacement}}
+\index{get\+\_\+thumb\+\_\+distal\+\_\+displacement@{get\+\_\+thumb\+\_\+distal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+distal\+\_\+displacement()}{get\_thumb\_distal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+distal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the thumb distal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_ga86d0adfde28a3008a21fb4620e4b93df}\label{group__displacement_access_ga86d0adfde28a3008a21fb4620e4b93df}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+displacement@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+thumb\+\_\+proximal\+\_\+displacement@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+proximal\+\_\+displacement()}{get\_thumb\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the thumb proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__displacement_access_gab799e09f1b944ca87b1567a9a9ae2ee4}\label{group__displacement_access_gab799e09f1b944ca87b1567a9a9ae2ee4}} 
+\index{Hand displacements access functions@{Hand displacements access functions}!get\+\_\+wrist\+\_\+proximal\+\_\+displacement@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement}}
+\index{get\+\_\+wrist\+\_\+proximal\+\_\+displacement@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement}!Hand displacements access functions@{Hand displacements access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+wrist\+\_\+proximal\+\_\+displacement()}{get\_wrist\_proximal\_displacement()}}
+{\footnotesize\ttfamily float get\+\_\+wrist\+\_\+proximal\+\_\+displacement (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The displacement for the wrist proximal joint. This is the raw data from the hardware before calculating the corresponding rotation. The displacement will always be in the inclusive range of (0, 1023). 
+\end{DoxyReturn}

@@ -1,0 +1,64 @@
+\hypertarget{arduino_8h}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/arduino.h File Reference}
+\label{arduino_8h}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/arduino.\+h@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/arduino.\+h}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{arduino_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+\item 
+\#define \hyperlink{arduino_8h_ae1fdf2ee0aab104551eef6c1de76a0aa}{M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD}~C\+B\+R\+\_\+9600;
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+H\+A\+N\+D\+LE \hyperlink{arduino_8h_adce301b378cd717887bf8a147ee8e63e}{arduino\+\_\+connect} (const wchar\+\_\+t $\ast$p\+Device\+Name)
+\item 
+H\+A\+N\+D\+LE \hyperlink{arduino_8h_a0ae5f6295c58b344622494c49f674edd}{arduino\+\_\+connect\+\_\+async} (const wchar\+\_\+t $\ast$p\+Device\+Name)
+\item 
+void \hyperlink{arduino_8h_a1b6a9ae508ec3b36d1cc80cd27bd57f6}{arduino\+\_\+disconnect} (H\+A\+N\+D\+LE h\+Arduino)
+\item 
+bool \hyperlink{arduino_8h_a60b11dd107bb36cd84858148a6df6309}{arduino\+\_\+is\+\_\+connected} (H\+A\+N\+D\+LE h\+Arduino)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{arduino_8h_ae1fdf2ee0aab104551eef6c1de76a0aa}\label{arduino_8h_ae1fdf2ee0aab104551eef6c1de76a0aa}} 
+\index{arduino.\+h@{arduino.\+h}!M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD@{M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD}}
+\index{M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD@{M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD}{MAESTRO\_BAUD}}
+{\footnotesize\ttfamily \#define M\+A\+E\+S\+T\+R\+O\+\_\+\+B\+A\+UD~C\+B\+R\+\_\+9600;}
+
+\mbox{\Hypertarget{arduino_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}\label{arduino_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}} 
+\index{arduino.\+h@{arduino.\+h}!W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}}
+\index{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}{WIN32\_LEAN\_AND\_MEAN}}
+{\footnotesize\ttfamily \#define W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{arduino_8h_adce301b378cd717887bf8a147ee8e63e}\label{arduino_8h_adce301b378cd717887bf8a147ee8e63e}} 
+\index{arduino.\+h@{arduino.\+h}!arduino\+\_\+connect@{arduino\+\_\+connect}}
+\index{arduino\+\_\+connect@{arduino\+\_\+connect}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{arduino\+\_\+connect()}{arduino\_connect()}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE arduino\+\_\+connect (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{p\+Device\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{arduino_8h_a0ae5f6295c58b344622494c49f674edd}\label{arduino_8h_a0ae5f6295c58b344622494c49f674edd}} 
+\index{arduino.\+h@{arduino.\+h}!arduino\+\_\+connect\+\_\+async@{arduino\+\_\+connect\+\_\+async}}
+\index{arduino\+\_\+connect\+\_\+async@{arduino\+\_\+connect\+\_\+async}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{arduino\+\_\+connect\+\_\+async()}{arduino\_connect\_async()}}
+{\footnotesize\ttfamily H\+A\+N\+D\+LE arduino\+\_\+connect\+\_\+async (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{p\+Device\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{arduino_8h_a1b6a9ae508ec3b36d1cc80cd27bd57f6}\label{arduino_8h_a1b6a9ae508ec3b36d1cc80cd27bd57f6}} 
+\index{arduino.\+h@{arduino.\+h}!arduino\+\_\+disconnect@{arduino\+\_\+disconnect}}
+\index{arduino\+\_\+disconnect@{arduino\+\_\+disconnect}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{arduino\+\_\+disconnect()}{arduino\_disconnect()}}
+{\footnotesize\ttfamily void arduino\+\_\+disconnect (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+Arduino }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{arduino_8h_a60b11dd107bb36cd84858148a6df6309}\label{arduino_8h_a60b11dd107bb36cd84858148a6df6309}} 
+\index{arduino.\+h@{arduino.\+h}!arduino\+\_\+is\+\_\+connected@{arduino\+\_\+is\+\_\+connected}}
+\index{arduino\+\_\+is\+\_\+connected@{arduino\+\_\+is\+\_\+connected}!arduino.\+h@{arduino.\+h}}
+\subsubsection{\texorpdfstring{arduino\+\_\+is\+\_\+connected()}{arduino\_is\_connected()}}
+{\footnotesize\ttfamily bool arduino\+\_\+is\+\_\+connected (\begin{DoxyParamCaption}\item[{H\+A\+N\+D\+LE}]{h\+Arduino }\end{DoxyParamCaption})}
+

@@ -1,0 +1,289 @@
+\begin{theindex}
+
+  \item {Calibration\+State}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Displacement\+Context}, \hyperpage{41}
+
+  \indexspace
+
+  \item {end\+\_\+proximal\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{9}
+  \item {end\+\_\+thumb\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{10}
+  \item {end\+\_\+wrist\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Force-\/feedback control functions}, \hyperpage{35}
+    \subitem {get\+\_\+default\+\_\+motor\+\_\+amplitude}, 
+		\hyperpage{35}
+    \subitem {get\+\_\+force\+\_\+feedback\+\_\+context}, 
+		\hyperpage{35}
+    \subitem {get\+\_\+index\+\_\+motor\+\_\+amplitude}, \hyperpage{36}
+    \subitem {get\+\_\+little\+\_\+motor\+\_\+amplitude}, 
+		\hyperpage{36}
+    \subitem {get\+\_\+max\+\_\+motor\+\_\+amplitude}, \hyperpage{36}
+    \subitem {get\+\_\+middle\+\_\+motor\+\_\+amplitude}, 
+		\hyperpage{37}
+    \subitem {get\+\_\+ring\+\_\+motor\+\_\+amplitude}, \hyperpage{37}
+    \subitem {get\+\_\+thumb\+\_\+motor\+\_\+amplitude}, \hyperpage{37}
+    \subitem {set\+\_\+index\+\_\+motor\+\_\+amplitude}, \hyperpage{38}
+    \subitem {set\+\_\+little\+\_\+motor\+\_\+amplitude}, 
+		\hyperpage{38}
+    \subitem {set\+\_\+middle\+\_\+motor\+\_\+amplitude}, 
+		\hyperpage{38}
+    \subitem {set\+\_\+ring\+\_\+motor\+\_\+amplitude}, \hyperpage{39}
+    \subitem {set\+\_\+thumb\+\_\+motor\+\_\+amplitude}, \hyperpage{39}
+  \item {Force\+Feedback\+Context}, \hyperpage{42}
+
+  \indexspace
+
+  \item {get\+\_\+calibration\+\_\+state}
+    \subitem {Maestro calibration functions}, \hyperpage{10}
+  \item {get\+\_\+default\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{35}
+  \item {get\+\_\+displacement\+\_\+context}
+    \subitem {Hand displacements access functions}, \hyperpage{15}
+  \item {get\+\_\+force\+\_\+feedback\+\_\+context}
+    \subitem {Force-\/feedback control functions}, \hyperpage{35}
+  \item {get\+\_\+glove\+\_\+context}
+    \subitem {Glove management functions}, \hyperpage{13}
+  \item {get\+\_\+index\+\_\+distal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{15}
+  \item {get\+\_\+index\+\_\+distal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{21}
+  \item {get\+\_\+index\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{36}
+  \item {get\+\_\+index\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{16}
+  \item {get\+\_\+index\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{22}
+  \item {get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}
+    \subitem {Hand rotations access functions}, \hyperpage{22}
+  \item {get\+\_\+index\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{30}
+  \item {get\+\_\+left\+\_\+glove\+\_\+pointer}
+    \subitem {Glove management functions}, \hyperpage{13}
+  \item {get\+\_\+little\+\_\+distal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{16}
+  \item {get\+\_\+little\+\_\+distal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{22}
+  \item {get\+\_\+little\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{36}
+  \item {get\+\_\+little\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{17}
+  \item {get\+\_\+little\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{23}
+  \item {get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}
+    \subitem {Hand rotations access functions}, \hyperpage{23}
+  \item {get\+\_\+little\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{30}
+  \item {get\+\_\+max\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{36}
+  \item {get\+\_\+middle\+\_\+distal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{17}
+  \item {get\+\_\+middle\+\_\+distal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{23}
+  \item {get\+\_\+middle\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{37}
+  \item {get\+\_\+middle\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{17}
+  \item {get\+\_\+middle\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{24}
+  \item {get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}
+    \subitem {Hand rotations access functions}, \hyperpage{24}
+  \item {get\+\_\+middle\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{31}
+  \item {get\+\_\+right\+\_\+glove\+\_\+pointer}
+    \subitem {Glove management functions}, \hyperpage{14}
+  \item {get\+\_\+ring\+\_\+distal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{18}
+  \item {get\+\_\+ring\+\_\+distal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{25}
+  \item {get\+\_\+ring\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{37}
+  \item {get\+\_\+ring\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{18}
+  \item {get\+\_\+ring\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{25}
+  \item {get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}
+    \subitem {Hand rotations access functions}, \hyperpage{25}
+  \item {get\+\_\+ring\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{31}
+  \item {get\+\_\+rotation\+\_\+context}
+    \subitem {Hand rotations access functions}, \hyperpage{26}
+  \item {get\+\_\+thumb\+\_\+abduction\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{18}
+  \item {get\+\_\+thumb\+\_\+abduction\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{26}
+  \item {get\+\_\+thumb\+\_\+distal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{19}
+  \item {get\+\_\+thumb\+\_\+distal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{26}
+  \item {get\+\_\+thumb\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{37}
+  \item {get\+\_\+thumb\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{19}
+  \item {get\+\_\+thumb\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{27}
+  \item {get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}
+    \subitem {Hand rotations access functions}, \hyperpage{27}
+  \item {get\+\_\+thumb\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{31}
+  \item {get\+\_\+vibration\+\_\+context}
+    \subitem {Vibration control functions}, \hyperpage{32}
+  \item {get\+\_\+wrist\+\_\+proximal\+\_\+displacement}
+    \subitem {Hand displacements access functions}, \hyperpage{19}
+  \item {get\+\_\+wrist\+\_\+proximal\+\_\+rotation}
+    \subitem {Hand rotations access functions}, \hyperpage{27}
+  \item {Glove management functions}, \hyperpage{13}
+    \subitem {get\+\_\+glove\+\_\+context}, \hyperpage{13}
+    \subitem {get\+\_\+left\+\_\+glove\+\_\+pointer}, \hyperpage{13}
+    \subitem {get\+\_\+right\+\_\+glove\+\_\+pointer}, \hyperpage{14}
+    \subitem {is\+\_\+glove\+\_\+connected}, \hyperpage{14}
+    \subitem {start\+\_\+maestro\+\_\+detection\+\_\+service}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Hand displacements access functions}, \hyperpage{15}
+    \subitem {get\+\_\+displacement\+\_\+context}, \hyperpage{15}
+    \subitem {get\+\_\+index\+\_\+distal\+\_\+displacement}, 
+		\hyperpage{15}
+    \subitem {get\+\_\+index\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{16}
+    \subitem {get\+\_\+little\+\_\+distal\+\_\+displacement}, 
+		\hyperpage{16}
+    \subitem {get\+\_\+little\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{17}
+    \subitem {get\+\_\+middle\+\_\+distal\+\_\+displacement}, 
+		\hyperpage{17}
+    \subitem {get\+\_\+middle\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{17}
+    \subitem {get\+\_\+ring\+\_\+distal\+\_\+displacement}, 
+		\hyperpage{18}
+    \subitem {get\+\_\+ring\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{18}
+    \subitem {get\+\_\+thumb\+\_\+abduction\+\_\+displacement}, 
+		\hyperpage{18}
+    \subitem {get\+\_\+thumb\+\_\+distal\+\_\+displacement}, 
+		\hyperpage{19}
+    \subitem {get\+\_\+thumb\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{19}
+    \subitem {get\+\_\+wrist\+\_\+proximal\+\_\+displacement}, 
+		\hyperpage{19}
+  \item {Hand rotations access functions}, \hyperpage{21}
+    \subitem {get\+\_\+index\+\_\+distal\+\_\+rotation}, \hyperpage{21}
+    \subitem {get\+\_\+index\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{22}
+    \subitem {get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}, 
+		\hyperpage{22}
+    \subitem {get\+\_\+little\+\_\+distal\+\_\+rotation}, 
+		\hyperpage{22}
+    \subitem {get\+\_\+little\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{23}
+    \subitem {get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}, 
+		\hyperpage{23}
+    \subitem {get\+\_\+middle\+\_\+distal\+\_\+rotation}, 
+		\hyperpage{23}
+    \subitem {get\+\_\+middle\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{24}
+    \subitem {get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}, 
+		\hyperpage{24}
+    \subitem {get\+\_\+ring\+\_\+distal\+\_\+rotation}, \hyperpage{25}
+    \subitem {get\+\_\+ring\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{25}
+    \subitem {get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}, 
+		\hyperpage{25}
+    \subitem {get\+\_\+rotation\+\_\+context}, \hyperpage{26}
+    \subitem {get\+\_\+thumb\+\_\+abduction\+\_\+rotation}, 
+		\hyperpage{26}
+    \subitem {get\+\_\+thumb\+\_\+distal\+\_\+rotation}, \hyperpage{26}
+    \subitem {get\+\_\+thumb\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{27}
+    \subitem {get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}, 
+		\hyperpage{27}
+    \subitem {get\+\_\+wrist\+\_\+proximal\+\_\+rotation}, 
+		\hyperpage{27}
+  \item {Haptic control functions}, \hyperpage{29}
+
+  \indexspace
+
+  \item {is\+\_\+glove\+\_\+connected}
+    \subitem {Glove management functions}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Maestro calibration functions}, \hyperpage{9}
+    \subitem {end\+\_\+proximal\+\_\+calibration}, \hyperpage{9}
+    \subitem {end\+\_\+thumb\+\_\+calibration}, \hyperpage{10}
+    \subitem {end\+\_\+wrist\+\_\+calibration}, \hyperpage{10}
+    \subitem {get\+\_\+calibration\+\_\+state}, \hyperpage{10}
+    \subitem {start\+\_\+proximal\+\_\+calibration}, \hyperpage{11}
+    \subitem {start\+\_\+thumb\+\_\+calibration}, \hyperpage{11}
+    \subitem {start\+\_\+wrist\+\_\+calibration}, \hyperpage{11}
+  \item {Maestro\+Glove\+Context}, \hyperpage{43}
+
+  \indexspace
+
+  \item {Rotation\+Context}, \hyperpage{44}
+
+  \indexspace
+
+  \item {set\+\_\+index\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{38}
+  \item {set\+\_\+index\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{32}
+  \item {set\+\_\+little\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{38}
+  \item {set\+\_\+little\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{33}
+  \item {set\+\_\+middle\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{38}
+  \item {set\+\_\+middle\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{33}
+  \item {set\+\_\+ring\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{39}
+  \item {set\+\_\+ring\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{33}
+  \item {set\+\_\+thumb\+\_\+motor\+\_\+amplitude}
+    \subitem {Force-\/feedback control functions}, \hyperpage{39}
+  \item {set\+\_\+thumb\+\_\+vibration\+\_\+effect}
+    \subitem {Vibration control functions}, \hyperpage{34}
+  \item {start\+\_\+maestro\+\_\+detection\+\_\+service}
+    \subitem {Glove management functions}, \hyperpage{14}
+  \item {start\+\_\+proximal\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{11}
+  \item {start\+\_\+thumb\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{11}
+  \item {start\+\_\+wrist\+\_\+calibration}
+    \subitem {Maestro calibration functions}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Vibration control functions}, \hyperpage{30}
+    \subitem {get\+\_\+index\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{30}
+    \subitem {get\+\_\+little\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{30}
+    \subitem {get\+\_\+middle\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{31}
+    \subitem {get\+\_\+ring\+\_\+vibration\+\_\+effect}, \hyperpage{31}
+    \subitem {get\+\_\+thumb\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{31}
+    \subitem {get\+\_\+vibration\+\_\+context}, \hyperpage{32}
+    \subitem {set\+\_\+index\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{32}
+    \subitem {set\+\_\+little\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{33}
+    \subitem {set\+\_\+middle\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{33}
+    \subitem {set\+\_\+ring\+\_\+vibration\+\_\+effect}, \hyperpage{33}
+    \subitem {set\+\_\+thumb\+\_\+vibration\+\_\+effect}, 
+		\hyperpage{34}
+  \item {Vibration\+Context}, \hyperpage{44}
+
+\end{theindex}

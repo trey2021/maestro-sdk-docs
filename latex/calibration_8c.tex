@@ -1,0 +1,116 @@
+\hypertarget{calibration_8c}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/calibration.c File Reference}
+\label{calibration_8c}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/calibration.\+c@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/calibration.\+c}}
+{\ttfamily \#include $<$maestro.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$calibration.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{calibration_8c_a9802b8522eddaa7ce4282f6ca9480cde}{update\+\_\+calibration} (\hyperlink{struct_calibration_context}{Calibration\+Context} $\ast$p\+Context)
+\item 
+float \hyperlink{calibration_8c_a7c541bd72891ff7fc192a0e26b2f3e1e}{get\+\_\+phalange\+\_\+rotation} (\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$p\+Glove, \hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$p\+Phalange)
+\item 
+float \hyperlink{calibration_8c_a9c6500a654717560e1c7b6315754aae9}{get\+\_\+flex\+\_\+rotation} (\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$p\+Glove, \hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$p\+Flex)
+\item 
+void \hyperlink{calibration_8c_a8f73769259dc4198c57346dd6ef17ff2}{init\+\_\+calibration\+\_\+context} (\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$p\+Glove, \hyperlink{union_motion_ranges}{Motion\+Ranges} $\ast$motion\+Ranges)
+\item 
+void \hyperlink{calibration_8c_a64b9908ca2ddf49e5ddda26d909adba9}{init\+\_\+calibration\+\_\+phalange} (\hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$p\+Phalange)
+\item 
+void \hyperlink{calibration_8c_a4d4e78506108bc9c6c07a5286d4b84e9}{init\+\_\+calibration\+\_\+flex} (\hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$p\+Flex)
+\item 
+void \hyperlink{calibration_8c_a5b353d218442edc6949608fdf06d560a}{init\+\_\+rotation\+\_\+configuration} (\hyperlink{struct_rotation_configuration}{Rotation\+Configuration} $\ast$rotation\+Configuration)
+\item 
+void \hyperlink{calibration_8c_ad622e76fb2c30849050ccd46ed394d2f}{init\+\_\+motion\+\_\+ranges} (\hyperlink{union_motion_ranges}{Motion\+Ranges} $\ast$p\+Motion\+Ranges)
+\item 
+void \hyperlink{calibration_8c_ada822eb48dc26f75aba33725560e5ebd}{free\+\_\+calibration\+\_\+context} (\hyperlink{struct_calibration_context}{Calibration\+Context} $\ast$p\+Context)
+\item 
+void \hyperlink{calibration_8c_ad62876e219e28b1cddb2903c2b9c12a2}{free\+\_\+calibration\+\_\+phalange} (\hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$p\+Phalange)
+\item 
+void \hyperlink{calibration_8c_a0a69356d064962ccdc02bafaac31498c}{free\+\_\+calibration\+\_\+flex} (\hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$p\+Flex)
+\item 
+void \hyperlink{calibration_8c_a202ef284924c35ec9a413a979dd0f7c3}{reset\+\_\+rotation\+\_\+configuration} (\hyperlink{struct_rotation_configuration}{Rotation\+Configuration} $\ast$rotation\+Configuration)
+\item 
+\hyperlink{union_motion_ranges}{Motion\+Ranges} $\ast$ \hyperlink{calibration_8c_a71f08d9695d3f268a7d37db7cf293925}{load\+\_\+motion\+\_\+ranges} (char $\ast$motion\+\_\+ranges\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{calibration_8c_ada822eb48dc26f75aba33725560e5ebd}\label{calibration_8c_ada822eb48dc26f75aba33725560e5ebd}} 
+\index{calibration.\+c@{calibration.\+c}!free\+\_\+calibration\+\_\+context@{free\+\_\+calibration\+\_\+context}}
+\index{free\+\_\+calibration\+\_\+context@{free\+\_\+calibration\+\_\+context}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+calibration\+\_\+context()}{free\_calibration\_context()}}
+{\footnotesize\ttfamily void free\+\_\+calibration\+\_\+context (\begin{DoxyParamCaption}\item[{\hyperlink{struct_calibration_context}{Calibration\+Context} $\ast$}]{p\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a0a69356d064962ccdc02bafaac31498c}\label{calibration_8c_a0a69356d064962ccdc02bafaac31498c}} 
+\index{calibration.\+c@{calibration.\+c}!free\+\_\+calibration\+\_\+flex@{free\+\_\+calibration\+\_\+flex}}
+\index{free\+\_\+calibration\+\_\+flex@{free\+\_\+calibration\+\_\+flex}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+calibration\+\_\+flex()}{free\_calibration\_flex()}}
+{\footnotesize\ttfamily void free\+\_\+calibration\+\_\+flex (\begin{DoxyParamCaption}\item[{\hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$}]{p\+Flex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_ad62876e219e28b1cddb2903c2b9c12a2}\label{calibration_8c_ad62876e219e28b1cddb2903c2b9c12a2}} 
+\index{calibration.\+c@{calibration.\+c}!free\+\_\+calibration\+\_\+phalange@{free\+\_\+calibration\+\_\+phalange}}
+\index{free\+\_\+calibration\+\_\+phalange@{free\+\_\+calibration\+\_\+phalange}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{free\+\_\+calibration\+\_\+phalange()}{free\_calibration\_phalange()}}
+{\footnotesize\ttfamily void free\+\_\+calibration\+\_\+phalange (\begin{DoxyParamCaption}\item[{\hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$}]{p\+Phalange }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a9c6500a654717560e1c7b6315754aae9}\label{calibration_8c_a9c6500a654717560e1c7b6315754aae9}} 
+\index{calibration.\+c@{calibration.\+c}!get\+\_\+flex\+\_\+rotation@{get\+\_\+flex\+\_\+rotation}}
+\index{get\+\_\+flex\+\_\+rotation@{get\+\_\+flex\+\_\+rotation}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+flex\+\_\+rotation()}{get\_flex\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+flex\+\_\+rotation (\begin{DoxyParamCaption}\item[{\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$}]{p\+Glove,  }\item[{\hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$}]{p\+Flex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a7c541bd72891ff7fc192a0e26b2f3e1e}\label{calibration_8c_a7c541bd72891ff7fc192a0e26b2f3e1e}} 
+\index{calibration.\+c@{calibration.\+c}!get\+\_\+phalange\+\_\+rotation@{get\+\_\+phalange\+\_\+rotation}}
+\index{get\+\_\+phalange\+\_\+rotation@{get\+\_\+phalange\+\_\+rotation}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+phalange\+\_\+rotation()}{get\_phalange\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+phalange\+\_\+rotation (\begin{DoxyParamCaption}\item[{\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$}]{p\+Glove,  }\item[{\hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$}]{p\+Phalange }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a8f73769259dc4198c57346dd6ef17ff2}\label{calibration_8c_a8f73769259dc4198c57346dd6ef17ff2}} 
+\index{calibration.\+c@{calibration.\+c}!init\+\_\+calibration\+\_\+context@{init\+\_\+calibration\+\_\+context}}
+\index{init\+\_\+calibration\+\_\+context@{init\+\_\+calibration\+\_\+context}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+calibration\+\_\+context()}{init\_calibration\_context()}}
+{\footnotesize\ttfamily void init\+\_\+calibration\+\_\+context (\begin{DoxyParamCaption}\item[{\hyperlink{struct_maestro_glove}{Maestro\+Glove} $\ast$}]{p\+Glove,  }\item[{\hyperlink{union_motion_ranges}{Motion\+Ranges} $\ast$}]{motion\+Ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a4d4e78506108bc9c6c07a5286d4b84e9}\label{calibration_8c_a4d4e78506108bc9c6c07a5286d4b84e9}} 
+\index{calibration.\+c@{calibration.\+c}!init\+\_\+calibration\+\_\+flex@{init\+\_\+calibration\+\_\+flex}}
+\index{init\+\_\+calibration\+\_\+flex@{init\+\_\+calibration\+\_\+flex}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+calibration\+\_\+flex()}{init\_calibration\_flex()}}
+{\footnotesize\ttfamily void init\+\_\+calibration\+\_\+flex (\begin{DoxyParamCaption}\item[{\hyperlink{struct_calibration_flex}{Calibration\+Flex} $\ast$}]{p\+Flex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a64b9908ca2ddf49e5ddda26d909adba9}\label{calibration_8c_a64b9908ca2ddf49e5ddda26d909adba9}} 
+\index{calibration.\+c@{calibration.\+c}!init\+\_\+calibration\+\_\+phalange@{init\+\_\+calibration\+\_\+phalange}}
+\index{init\+\_\+calibration\+\_\+phalange@{init\+\_\+calibration\+\_\+phalange}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+calibration\+\_\+phalange()}{init\_calibration\_phalange()}}
+{\footnotesize\ttfamily void init\+\_\+calibration\+\_\+phalange (\begin{DoxyParamCaption}\item[{\hyperlink{maestro_8h_a09681c098cfa56729e216f222d0486b2}{Calibration\+Phalange} $\ast$}]{p\+Phalange }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_ad622e76fb2c30849050ccd46ed394d2f}\label{calibration_8c_ad622e76fb2c30849050ccd46ed394d2f}} 
+\index{calibration.\+c@{calibration.\+c}!init\+\_\+motion\+\_\+ranges@{init\+\_\+motion\+\_\+ranges}}
+\index{init\+\_\+motion\+\_\+ranges@{init\+\_\+motion\+\_\+ranges}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+motion\+\_\+ranges()}{init\_motion\_ranges()}}
+{\footnotesize\ttfamily void init\+\_\+motion\+\_\+ranges (\begin{DoxyParamCaption}\item[{\hyperlink{union_motion_ranges}{Motion\+Ranges} $\ast$}]{p\+Motion\+Ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a5b353d218442edc6949608fdf06d560a}\label{calibration_8c_a5b353d218442edc6949608fdf06d560a}} 
+\index{calibration.\+c@{calibration.\+c}!init\+\_\+rotation\+\_\+configuration@{init\+\_\+rotation\+\_\+configuration}}
+\index{init\+\_\+rotation\+\_\+configuration@{init\+\_\+rotation\+\_\+configuration}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+rotation\+\_\+configuration()}{init\_rotation\_configuration()}}
+{\footnotesize\ttfamily void init\+\_\+rotation\+\_\+configuration (\begin{DoxyParamCaption}\item[{\hyperlink{struct_rotation_configuration}{Rotation\+Configuration} $\ast$}]{rotation\+Configuration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a71f08d9695d3f268a7d37db7cf293925}\label{calibration_8c_a71f08d9695d3f268a7d37db7cf293925}} 
+\index{calibration.\+c@{calibration.\+c}!load\+\_\+motion\+\_\+ranges@{load\+\_\+motion\+\_\+ranges}}
+\index{load\+\_\+motion\+\_\+ranges@{load\+\_\+motion\+\_\+ranges}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{load\+\_\+motion\+\_\+ranges()}{load\_motion\_ranges()}}
+{\footnotesize\ttfamily \hyperlink{union_motion_ranges}{Motion\+Ranges}$\ast$ load\+\_\+motion\+\_\+ranges (\begin{DoxyParamCaption}\item[{char $\ast$}]{motion\+\_\+ranges\+\_\+file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a202ef284924c35ec9a413a979dd0f7c3}\label{calibration_8c_a202ef284924c35ec9a413a979dd0f7c3}} 
+\index{calibration.\+c@{calibration.\+c}!reset\+\_\+rotation\+\_\+configuration@{reset\+\_\+rotation\+\_\+configuration}}
+\index{reset\+\_\+rotation\+\_\+configuration@{reset\+\_\+rotation\+\_\+configuration}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{reset\+\_\+rotation\+\_\+configuration()}{reset\_rotation\_configuration()}}
+{\footnotesize\ttfamily void reset\+\_\+rotation\+\_\+configuration (\begin{DoxyParamCaption}\item[{\hyperlink{struct_rotation_configuration}{Rotation\+Configuration} $\ast$}]{rotation\+Configuration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{calibration_8c_a9802b8522eddaa7ce4282f6ca9480cde}\label{calibration_8c_a9802b8522eddaa7ce4282f6ca9480cde}} 
+\index{calibration.\+c@{calibration.\+c}!update\+\_\+calibration@{update\+\_\+calibration}}
+\index{update\+\_\+calibration@{update\+\_\+calibration}!calibration.\+c@{calibration.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+calibration()}{update\_calibration()}}
+{\footnotesize\ttfamily void update\+\_\+calibration (\begin{DoxyParamCaption}\item[{\hyperlink{struct_calibration_context}{Calibration\+Context} $\ast$}]{p\+Context }\end{DoxyParamCaption})}
+

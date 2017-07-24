@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['update_5fcalibration',['update_calibration',['../calibration_8c.html#a9802b8522eddaa7ce4282f6ca9480cde',1,'update_calibration(CalibrationContext *pContext):&#160;calibration.c'],['../calibration_8h.html#a4def8f82e6f2d070f4766c7be8457253',1,'update_calibration(CalibrationContext *):&#160;calibration.c']]],
+  ['update_5fflex_5fcalibration',['update_flex_calibration',['../calibration_8c.html#a87cadc76f053a002d33dcabaf3dd8d56',1,'calibration.c']]],
+  ['update_5fphalange_5fcalibration',['update_phalange_calibration',['../calibration_8c.html#ae19e6b55ca6a1bae3d696964cdd21564',1,'calibration.c']]],
+  ['update_5fphalange_5fdisplacements',['update_phalange_displacements',['../motion__capture_8h.html#a4359e5f2501ac8586595e2a44caab56d',1,'update_phalange_displacements(MaestroGlovePhalanges *pPhalanges, PhalangeDisplacementsReply *pReadings):&#160;motion_capture.c'],['../motion__capture_8c.html#a4359e5f2501ac8586595e2a44caab56d',1,'update_phalange_displacements(MaestroGlovePhalanges *pPhalanges, PhalangeDisplacementsReply *pReadings):&#160;motion_capture.c']]],
+  ['update_5fregression',['update_regression',['../calibration_8c.html#ace6ef3e247b531b1736d396064f15e1e',1,'calibration.c']]],
+  ['update_5frotation_5fconfiguration',['update_rotation_configuration',['../calibration_8c.html#afb7c895376b39fdd417d719a172465a1',1,'calibration.c']]],
+  ['usb_5fflush',['usb_flush',['../arduino__usb_8c.html#a9935a18744616db66abf02f4d98616da',1,'usb_flush(HANDLE hArduino):&#160;arduino_usb.c'],['../arduino__usb_8h.html#a9935a18744616db66abf02f4d98616da',1,'usb_flush(HANDLE hArduino):&#160;arduino_usb.c']]],
+  ['usb_5fread_5flength',['usb_read_length',['../arduino__usb_8c.html#a2cbbb4964d8e127f53a841ec885c41ab',1,'usb_read_length(HANDLE hArduino, void *pBuffer, size_t buffer_length, DWORD read_length):&#160;arduino_usb.c'],['../arduino__usb_8h.html#acba87868e27c09c1aa892be3d0dfcaa5',1,'usb_read_length(HANDLE hArduino, void *pBuffer, size_t buffer_length, DWORD readLength):&#160;arduino_usb.c']]],
+  ['usb_5fwrite_5flength',['usb_write_length',['../arduino__usb_8c.html#ac84e417a4aae3dee35dfc4c7710fae66',1,'usb_write_length(HANDLE hArduino, void const *const pBuffer, size_t buffer_length, DWORD write_length):&#160;arduino_usb.c'],['../arduino__usb_8h.html#ac84e417a4aae3dee35dfc4c7710fae66',1,'usb_write_length(HANDLE hArduino, void const *const pBuffer, size_t buffer_length, DWORD write_length):&#160;arduino_usb.c']]]
+];

@@ -1,0 +1,211 @@
+\hypertarget{group__force_feedback_control}{}\section{Force-\/feedback control functions}
+\label{group__force_feedback_control}\index{Force-\/feedback control functions@{Force-\/feedback control functions}}
+
+
+These functions are used to set the force-\/feedback motor amplitude for an individual finger.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__force_feedback_control_gab4d208770cc93f80cb1815fe86e2be31}{set\+\_\+thumb\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_gae4b41d284100a6b343cd684ecd2d06a3}{set\+\_\+index\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_gace05e531e30dc784432e8bffa0fdb72b}{set\+\_\+middle\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_ga0e4501e2e7b288b6c99f19e3617308eb}{set\+\_\+ring\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+void \hyperlink{group__force_feedback_control_ga7bf117f412a5a181467035ff97515866}{set\+\_\+little\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr, uint8\+\_\+t amplitude)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga54aef0ba5f346eb893bb9e18bdd9a7c6}{get\+\_\+thumb\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga8449502fafb4bb8b163ba2fa2ef9d743}{get\+\_\+index\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga8d6036a18ed2a0a977fbd861b373f389}{get\+\_\+middle\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga10d53dad9720a77b092ff74d7d7c4111}{get\+\_\+ring\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga2c77aacc777827da2ac43e0e171d65f0}{get\+\_\+little\+\_\+motor\+\_\+amplitude} (intptr\+\_\+t maestro\+Ptr)
+\item 
+const \hyperlink{struct_force_feedback_context}{Force\+Feedback\+Context} $\ast$const \hyperlink{group__force_feedback_control_ga6017d2145085cfc8f6d455a29006a640}{get\+\_\+force\+\_\+feedback\+\_\+context} (intptr\+\_\+t maestro\+Ptr)
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga9d7356bde899e98b4b79183595480857}{get\+\_\+max\+\_\+motor\+\_\+amplitude} ()
+\item 
+uint8\+\_\+t \hyperlink{group__force_feedback_control_ga53a3050b70abb081087d716415b0d679}{get\+\_\+default\+\_\+motor\+\_\+amplitude} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to set the force-\/feedback motor amplitude for an individual finger. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__force_feedback_control_ga53a3050b70abb081087d716415b0d679}\label{group__force_feedback_control_ga53a3050b70abb081087d716415b0d679}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+default\+\_\+motor\+\_\+amplitude@{get\+\_\+default\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+default\+\_\+motor\+\_\+amplitude@{get\+\_\+default\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+default\+\_\+motor\+\_\+amplitude()}{get\_default\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+default\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The default non-\/collision motor amplitude. It is recommended to have a motor amplitude of at least the default for the sake of avoiding any slack in the force-\/feedback tendons. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga6017d2145085cfc8f6d455a29006a640}\label{group__force_feedback_control_ga6017d2145085cfc8f6d455a29006a640}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+force\+\_\+feedback\+\_\+context@{get\+\_\+force\+\_\+feedback\+\_\+context}}
+\index{get\+\_\+force\+\_\+feedback\+\_\+context@{get\+\_\+force\+\_\+feedback\+\_\+context}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+force\+\_\+feedback\+\_\+context()}{get\_force\_feedback\_context()}}
+{\footnotesize\ttfamily const \hyperlink{struct_force_feedback_context}{Force\+Feedback\+Context}$\ast$ const get\+\_\+force\+\_\+feedback\+\_\+context (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitudes. This returns a struct containing the same values acquired by {\ttfamily \hyperlink{group__force_feedback_control_ga54aef0ba5f346eb893bb9e18bdd9a7c6}{get\+\_\+thumb\+\_\+motor\+\_\+amplitude()}}, {\ttfamily \hyperlink{group__force_feedback_control_ga8449502fafb4bb8b163ba2fa2ef9d743}{get\+\_\+index\+\_\+motor\+\_\+amplitude()}}, {\ttfamily \hyperlink{group__force_feedback_control_ga8d6036a18ed2a0a977fbd861b373f389}{get\+\_\+middle\+\_\+motor\+\_\+amplitude()}}, {\ttfamily \hyperlink{group__force_feedback_control_ga10d53dad9720a77b092ff74d7d7c4111}{get\+\_\+ring\+\_\+motor\+\_\+amplitude()}}, and {\ttfamily \hyperlink{group__force_feedback_control_ga2c77aacc777827da2ac43e0e171d65f0}{get\+\_\+little\+\_\+motor\+\_\+amplitude()}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga8449502fafb4bb8b163ba2fa2ef9d743}\label{group__force_feedback_control_ga8449502fafb4bb8b163ba2fa2ef9d743}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+index\+\_\+motor\+\_\+amplitude@{get\+\_\+index\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+index\+\_\+motor\+\_\+amplitude@{get\+\_\+index\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+motor\+\_\+amplitude()}{get\_index\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+index\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitude for the index finger. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga2c77aacc777827da2ac43e0e171d65f0}\label{group__force_feedback_control_ga2c77aacc777827da2ac43e0e171d65f0}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+little\+\_\+motor\+\_\+amplitude@{get\+\_\+little\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+little\+\_\+motor\+\_\+amplitude@{get\+\_\+little\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+motor\+\_\+amplitude()}{get\_little\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+little\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitude for the little (pinky) finger. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga9d7356bde899e98b4b79183595480857}\label{group__force_feedback_control_ga9d7356bde899e98b4b79183595480857}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+max\+\_\+motor\+\_\+amplitude@{get\+\_\+max\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+max\+\_\+motor\+\_\+amplitude@{get\+\_\+max\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+motor\+\_\+amplitude()}{get\_max\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+max\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The maximum motor amplitude allowed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga8d6036a18ed2a0a977fbd861b373f389}\label{group__force_feedback_control_ga8d6036a18ed2a0a977fbd861b373f389}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+middle\+\_\+motor\+\_\+amplitude@{get\+\_\+middle\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+middle\+\_\+motor\+\_\+amplitude@{get\+\_\+middle\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+motor\+\_\+amplitude()}{get\_middle\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+middle\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitude for the middle finger. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga10d53dad9720a77b092ff74d7d7c4111}\label{group__force_feedback_control_ga10d53dad9720a77b092ff74d7d7c4111}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+ring\+\_\+motor\+\_\+amplitude@{get\+\_\+ring\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+ring\+\_\+motor\+\_\+amplitude@{get\+\_\+ring\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+motor\+\_\+amplitude()}{get\_ring\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+ring\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitude for the ring finger. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_ga54aef0ba5f346eb893bb9e18bdd9a7c6}\label{group__force_feedback_control_ga54aef0ba5f346eb893bb9e18bdd9a7c6}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!get\+\_\+thumb\+\_\+motor\+\_\+amplitude@{get\+\_\+thumb\+\_\+motor\+\_\+amplitude}}
+\index{get\+\_\+thumb\+\_\+motor\+\_\+amplitude@{get\+\_\+thumb\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+motor\+\_\+amplitude()}{get\_thumb\_motor\_amplitude()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+thumb\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current force-\/feedback motor amplitude for the thumb. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__force_feedback_control_gae4b41d284100a6b343cd684ecd2d06a3}\label{group__force_feedback_control_gae4b41d284100a6b343cd684ecd2d06a3}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+index\+\_\+motor\+\_\+amplitude@{set\+\_\+index\+\_\+motor\+\_\+amplitude}}
+\index{set\+\_\+index\+\_\+motor\+\_\+amplitude@{set\+\_\+index\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{set\+\_\+index\+\_\+motor\+\_\+amplitude()}{set\_index\_motor\_amplitude()}}
+{\footnotesize\ttfamily void set\+\_\+index\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{uint8\+\_\+t}]{amplitude }\end{DoxyParamCaption})}
+
+Sets the force-\/feedback motor amplitude for the index finger. 
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em amplitude} & The new amplitude for the force-\/feedback motor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__force_feedback_control_ga7bf117f412a5a181467035ff97515866}\label{group__force_feedback_control_ga7bf117f412a5a181467035ff97515866}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+little\+\_\+motor\+\_\+amplitude@{set\+\_\+little\+\_\+motor\+\_\+amplitude}}
+\index{set\+\_\+little\+\_\+motor\+\_\+amplitude@{set\+\_\+little\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{set\+\_\+little\+\_\+motor\+\_\+amplitude()}{set\_little\_motor\_amplitude()}}
+{\footnotesize\ttfamily void set\+\_\+little\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{uint8\+\_\+t}]{amplitude }\end{DoxyParamCaption})}
+
+Sets the force-\/feedback motor amplitude for the little (pinky) finger. 
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em amplitude} & The new amplitude for the force-\/feedback motor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__force_feedback_control_gace05e531e30dc784432e8bffa0fdb72b}\label{group__force_feedback_control_gace05e531e30dc784432e8bffa0fdb72b}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+middle\+\_\+motor\+\_\+amplitude@{set\+\_\+middle\+\_\+motor\+\_\+amplitude}}
+\index{set\+\_\+middle\+\_\+motor\+\_\+amplitude@{set\+\_\+middle\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{set\+\_\+middle\+\_\+motor\+\_\+amplitude()}{set\_middle\_motor\_amplitude()}}
+{\footnotesize\ttfamily void set\+\_\+middle\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{uint8\+\_\+t}]{amplitude }\end{DoxyParamCaption})}
+
+Sets the force-\/feedback motor amplitude for the middle finger. 
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em amplitude} & The new amplitude for the force-\/feedback motor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__force_feedback_control_ga0e4501e2e7b288b6c99f19e3617308eb}\label{group__force_feedback_control_ga0e4501e2e7b288b6c99f19e3617308eb}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+ring\+\_\+motor\+\_\+amplitude@{set\+\_\+ring\+\_\+motor\+\_\+amplitude}}
+\index{set\+\_\+ring\+\_\+motor\+\_\+amplitude@{set\+\_\+ring\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{set\+\_\+ring\+\_\+motor\+\_\+amplitude()}{set\_ring\_motor\_amplitude()}}
+{\footnotesize\ttfamily void set\+\_\+ring\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{uint8\+\_\+t}]{amplitude }\end{DoxyParamCaption})}
+
+Sets the force-\/feedback motor amplitude for the ring finger. 
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em amplitude} & The new amplitude for the force-\/feedback motor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__force_feedback_control_gab4d208770cc93f80cb1815fe86e2be31}\label{group__force_feedback_control_gab4d208770cc93f80cb1815fe86e2be31}} 
+\index{Force-\/feedback control functions@{Force-\/feedback control functions}!set\+\_\+thumb\+\_\+motor\+\_\+amplitude@{set\+\_\+thumb\+\_\+motor\+\_\+amplitude}}
+\index{set\+\_\+thumb\+\_\+motor\+\_\+amplitude@{set\+\_\+thumb\+\_\+motor\+\_\+amplitude}!Force-\/feedback control functions@{Force-\/feedback control functions}}
+\subsubsection{\texorpdfstring{set\+\_\+thumb\+\_\+motor\+\_\+amplitude()}{set\_thumb\_motor\_amplitude()}}
+{\footnotesize\ttfamily void set\+\_\+thumb\+\_\+motor\+\_\+amplitude (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{uint8\+\_\+t}]{amplitude }\end{DoxyParamCaption})}
+
+Sets the force-\/feedback motor amplitude for the thumb. 
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em amplitude} & The new amplitude for the force-\/feedback motor. \\
+\hline
+\end{DoxyParams}

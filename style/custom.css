@@ -1,0 +1,19 @@
+
+/* Removes line breaks for function arguments */
+.memname tr {
+	float: left !important;
+}
+
+#titlearea {
+	background-color: #414143;
+	color: #F2F2F2;
+}
+
+#nav-path li.footer {
+	display: none;
+}
+
+code {
+    background-color: #DDDDDD;
+}
+

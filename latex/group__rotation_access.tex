@@ -1,0 +1,305 @@
+\hypertarget{group__rotation_access}{}\section{Hand rotations access functions}
+\label{group__rotation_access}\index{Hand rotations access functions@{Hand rotations access functions}}
+
+
+These functions are used to get the rotations for specific hand and finger joints.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{group__rotation_access_ga2b6d18c3684d7f0759ebae5201edc666}{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gaf8bed7222cb6414313c279237f4233d7}{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gaf6dfb65e74ed572e79a082d42e53157f}{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gad356c1f99c4dbb4631a28f0cf8e654b5}{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga6757e84fae5850e95bf380b534a1dd14}{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga7d2da9a343911275b4343c2904c0f92a}{get\+\_\+index\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga00e2691df05ed045e6f2ec02082d941c}{get\+\_\+index\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gaddec3e0d8d07788424fc1d9b202472c4}{get\+\_\+middle\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gab9cbb79e5f1b47bd20c079d636b825f0}{get\+\_\+middle\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga684f53b38b169aaab88de85578387a38}{get\+\_\+ring\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga2941894deaa99df80b74f33c824bbb07}{get\+\_\+ring\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga4e5835f8eae4b89728219b50ff20259b}{get\+\_\+little\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga92c96531688ae5be50890e7883eccd05}{get\+\_\+little\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga47f787dada77cf7f4f39ebf245aec420}{get\+\_\+thumb\+\_\+distal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga2dddb1473cdf463238904595e309938f}{get\+\_\+thumb\+\_\+abduction\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_gafc4acff90b0a11899e18ab2212ec6ce2}{get\+\_\+thumb\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}{get\+\_\+wrist\+\_\+proximal\+\_\+rotation} (intptr\+\_\+t maestro\+Ptr)
+\item 
+void \hyperlink{group__rotation_access_gaebc91ec820b72decfafe94a3fa34974d}{get\+\_\+rotation\+\_\+context} (intptr\+\_\+t maestro\+Ptr, \hyperlink{struct_rotation_context}{Rotation\+Context} $\ast$p\+Rotation\+Context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to get the rotations for specific hand and finger joints. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__rotation_access_ga00e2691df05ed045e6f2ec02082d941c}\label{group__rotation_access_ga00e2691df05ed045e6f2ec02082d941c}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+distal\+\_\+rotation@{get\+\_\+index\+\_\+distal\+\_\+rotation}}
+\index{get\+\_\+index\+\_\+distal\+\_\+rotation@{get\+\_\+index\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+distal\+\_\+rotation()}{get\_index\_distal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+distal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the index finger distal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga7d2da9a343911275b4343c2904c0f92a}\label{group__rotation_access_ga7d2da9a343911275b4343c2904c0f92a}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+proximal\+\_\+rotation@{get\+\_\+index\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+index\+\_\+proximal\+\_\+rotation@{get\+\_\+index\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+proximal\+\_\+rotation()}{get\_index\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the index finger proximal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga2b6d18c3684d7f0759ebae5201edc666}\label{group__rotation_access_ga2b6d18c3684d7f0759ebae5201edc666}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}}
+\index{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio()}{get\_index\_proximal\_rotation\_ratio()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+proximal\+\_\+rotation\+\_\+ratio (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a floating-\/point number in the inclusive range {\ttfamily (0, 1)} representing the current displacement in proportion to the displacement range. If the index finger proximal joint is at the maximum displacement (rotated all the way down), {\ttfamily 1} is returned. If at the minimum displacement (all the way up, such as when the hand is held flat), {\ttfamily 0} is returned. If between the minimum and maximum, the proportion is returned. For example, half way through the displacement range (halfway between the minimum and maximum rotations/displacements), {\ttfamily 0.\+5} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga4e5835f8eae4b89728219b50ff20259b}\label{group__rotation_access_ga4e5835f8eae4b89728219b50ff20259b}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+distal\+\_\+rotation@{get\+\_\+little\+\_\+distal\+\_\+rotation}}
+\index{get\+\_\+little\+\_\+distal\+\_\+rotation@{get\+\_\+little\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+distal\+\_\+rotation()}{get\_little\_distal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+distal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the little (pinky) finger distal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga92c96531688ae5be50890e7883eccd05}\label{group__rotation_access_ga92c96531688ae5be50890e7883eccd05}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+proximal\+\_\+rotation@{get\+\_\+little\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+little\+\_\+proximal\+\_\+rotation@{get\+\_\+little\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+proximal\+\_\+rotation()}{get\_little\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the little (pinky) finger proximal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gad356c1f99c4dbb4631a28f0cf8e654b5}\label{group__rotation_access_gad356c1f99c4dbb4631a28f0cf8e654b5}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}}
+\index{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio()}{get\_little\_proximal\_rotation\_ratio()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+proximal\+\_\+rotation\+\_\+ratio (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a floating-\/point number in the inclusive range {\ttfamily (0, 1)} representing the current displacement in proportion to the displacement range. If the little (pinky) finger proximal joint is at the maximum displacement (rotated all the way down), {\ttfamily 1} is returned. If at the minimum displacement (all the way up, such as when the hand is held flat), {\ttfamily 0} is returned. If between the minimum and maximum, the proportion is returned. For example, half way through the displacement range (halfway between the minimum and maximum rotations/displacements), {\ttfamily 0.\+5} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gaddec3e0d8d07788424fc1d9b202472c4}\label{group__rotation_access_gaddec3e0d8d07788424fc1d9b202472c4}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+distal\+\_\+rotation@{get\+\_\+middle\+\_\+distal\+\_\+rotation}}
+\index{get\+\_\+middle\+\_\+distal\+\_\+rotation@{get\+\_\+middle\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+distal\+\_\+rotation()}{get\_middle\_distal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+distal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the middle finger distal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gab9cbb79e5f1b47bd20c079d636b825f0}\label{group__rotation_access_gab9cbb79e5f1b47bd20c079d636b825f0}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+proximal\+\_\+rotation@{get\+\_\+middle\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+middle\+\_\+proximal\+\_\+rotation@{get\+\_\+middle\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+proximal\+\_\+rotation()}{get\_middle\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the middle finger proximal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gaf8bed7222cb6414313c279237f4233d7}\label{group__rotation_access_gaf8bed7222cb6414313c279237f4233d7}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}}
+\index{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio()}{get\_middle\_proximal\_rotation\_ratio()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+proximal\+\_\+rotation\+\_\+ratio (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a floating-\/point number in the inclusive range {\ttfamily (0, 1)} representing the current displacement in proportion to the displacement range. If the middle finger proximal joint is at the maximum displacement (rotated all the way down), {\ttfamily 1} is returned. If at the minimum displacement (all the way up, such as when the hand is held flat), {\ttfamily 0} is returned. If between the minimum and maximum, the proportion is returned. For example, half way through the displacement range (halfway between the minimum and maximum rotations/displacements), {\ttfamily 0.\+5} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga684f53b38b169aaab88de85578387a38}\label{group__rotation_access_ga684f53b38b169aaab88de85578387a38}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+distal\+\_\+rotation@{get\+\_\+ring\+\_\+distal\+\_\+rotation}}
+\index{get\+\_\+ring\+\_\+distal\+\_\+rotation@{get\+\_\+ring\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+distal\+\_\+rotation()}{get\_ring\_distal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+distal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the ring finger distal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga2941894deaa99df80b74f33c824bbb07}\label{group__rotation_access_ga2941894deaa99df80b74f33c824bbb07}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+proximal\+\_\+rotation@{get\+\_\+ring\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+ring\+\_\+proximal\+\_\+rotation@{get\+\_\+ring\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+proximal\+\_\+rotation()}{get\_ring\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the ring finger proximal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gaf6dfb65e74ed572e79a082d42e53157f}\label{group__rotation_access_gaf6dfb65e74ed572e79a082d42e53157f}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}}
+\index{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio()}{get\_ring\_proximal\_rotation\_ratio()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+proximal\+\_\+rotation\+\_\+ratio (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a floating-\/point number in the inclusive range {\ttfamily (0, 1)} representing the current displacement in proportion to the displacement range. If the ring finger proximal joint is at the maximum displacement (rotated all the way down), {\ttfamily 1} is returned. If at the minimum displacement (all the way up, such as when the hand is held flat), {\ttfamily 0} is returned. If between the minimum and maximum, the proportion is returned. For example, half way through the displacement range (halfway between the minimum and maximum rotations/displacements), {\ttfamily 0.\+5} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gaebc91ec820b72decfafe94a3fa34974d}\label{group__rotation_access_gaebc91ec820b72decfafe94a3fa34974d}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+rotation\+\_\+context@{get\+\_\+rotation\+\_\+context}}
+\index{get\+\_\+rotation\+\_\+context@{get\+\_\+rotation\+\_\+context}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+rotation\+\_\+context()}{get\_rotation\_context()}}
+{\footnotesize\ttfamily void get\+\_\+rotation\+\_\+context (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr,  }\item[{\hyperlink{struct_rotation_context}{Rotation\+Context} $\ast$}]{p\+Rotation\+Context }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+{\em p\+Rotation\+Context} & A pointer to a {\ttfamily \hyperlink{struct_rotation_context}{Rotation\+Context}} to be updated with the current rotation values. These are the same values obtained by calling the {\ttfamily get\+\_\+...\+\_\+rotation()} functions independently. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__rotation_access_ga2dddb1473cdf463238904595e309938f}\label{group__rotation_access_ga2dddb1473cdf463238904595e309938f}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+abduction\+\_\+rotation@{get\+\_\+thumb\+\_\+abduction\+\_\+rotation}}
+\index{get\+\_\+thumb\+\_\+abduction\+\_\+rotation@{get\+\_\+thumb\+\_\+abduction\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+abduction\+\_\+rotation()}{get\_thumb\_abduction\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+abduction\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the thumb abduction joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga47f787dada77cf7f4f39ebf245aec420}\label{group__rotation_access_ga47f787dada77cf7f4f39ebf245aec420}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+distal\+\_\+rotation@{get\+\_\+thumb\+\_\+distal\+\_\+rotation}}
+\index{get\+\_\+thumb\+\_\+distal\+\_\+rotation@{get\+\_\+thumb\+\_\+distal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+distal\+\_\+rotation()}{get\_thumb\_distal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+distal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the thumb distal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_gafc4acff90b0a11899e18ab2212ec6ce2}\label{group__rotation_access_gafc4acff90b0a11899e18ab2212ec6ce2}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+rotation@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+thumb\+\_\+proximal\+\_\+rotation@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+proximal\+\_\+rotation()}{get\_thumb\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the thumb proximal joint in degrees. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga6757e84fae5850e95bf380b534a1dd14}\label{group__rotation_access_ga6757e84fae5850e95bf380b534a1dd14}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}}
+\index{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio@{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio()}{get\_thumb\_proximal\_rotation\_ratio()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+proximal\+\_\+rotation\+\_\+ratio (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a floating-\/point number in the inclusive range {\ttfamily (0, 1)} representing the current displacement in proportion to the displacement range. If the thumb proximal joint is at the maximum displacement (rotated all the way down), {\ttfamily 1} is returned. If at the minimum displacement (all the way up, such as when the hand is held flat), {\ttfamily 0} is returned. If between the minimum and maximum, the proportion is returned. For example, half way through the displacement range (halfway between the minimum and maximum rotations/displacements), {\ttfamily 0.\+5} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}\label{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}} 
+\index{Hand rotations access functions@{Hand rotations access functions}!get\+\_\+wrist\+\_\+proximal\+\_\+rotation@{get\+\_\+wrist\+\_\+proximal\+\_\+rotation}}
+\index{get\+\_\+wrist\+\_\+proximal\+\_\+rotation@{get\+\_\+wrist\+\_\+proximal\+\_\+rotation}!Hand rotations access functions@{Hand rotations access functions}}
+\subsubsection{\texorpdfstring{get\+\_\+wrist\+\_\+proximal\+\_\+rotation()}{get\_wrist\_proximal\_rotation()}}
+{\footnotesize\ttfamily float get\+\_\+wrist\+\_\+proximal\+\_\+rotation (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotation for the wrist proximal joint in degrees. 
+\end{DoxyReturn}

@@ -1,0 +1,132 @@
+\hypertarget{group__glove_calibration}{}\section{Maestro calibration functions}
+\label{group__glove_calibration}\index{Maestro calibration functions@{Maestro calibration functions}}
+
+
+These functions are used to control the calibration of the Maestro glove.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__glove_calibration_ga7a6d895e59fe7a4f554b05ab067087cc}{start\+\_\+wrist\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+bool \hyperlink{group__glove_calibration_ga4528575643eb59c92277338516679588}{end\+\_\+wrist\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+bool \hyperlink{group__glove_calibration_ga8aa9f0c942b42299bc16440ce3d2c785}{start\+\_\+proximal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+bool \hyperlink{group__glove_calibration_gaca292cd71d6b63a803381ba9a43c3d85}{end\+\_\+proximal\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+bool \hyperlink{group__glove_calibration_ga8d3e246642b4dbb70be016ad320cc320}{start\+\_\+thumb\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+bool \hyperlink{group__glove_calibration_gaab1a5c7b6a32fa01bfad60f964065355}{end\+\_\+thumb\+\_\+calibration} (intptr\+\_\+t maestro\+Ptr)
+\item 
+const \hyperlink{struct_calibration_state}{Calibration\+State} $\ast$const \hyperlink{group__glove_calibration_gabdcc329a1b06cd17988398aabbbb74c2}{get\+\_\+calibration\+\_\+state} (intptr\+\_\+t maestro\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to control the calibration of the Maestro glove. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}}
+
+The Maestro should be calibrated \char`\"{}top down\char`\"{} in the order of Wrist, Proximal joints, and Distal joints. Each section can be recalibrated independently, but any sections \char`\"{}below\char`\"{} must also be recalibrated. For example, if you recalibrate the proximal joints, the wrist calibration will remain valid, but the distal joints will need to be recalibrated. If you recalibrate the wrist, both proximal and distal joints will need to be recalibrated. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__glove_calibration_gaca292cd71d6b63a803381ba9a43c3d85}\label{group__glove_calibration_gaca292cd71d6b63a803381ba9a43c3d85}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+proximal\+\_\+calibration@{end\+\_\+proximal\+\_\+calibration}}
+\index{end\+\_\+proximal\+\_\+calibration@{end\+\_\+proximal\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{end\+\_\+proximal\+\_\+calibration()}{end\_proximal\_calibration()}}
+{\footnotesize\ttfamily bool end\+\_\+proximal\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not proximal calibration was stopped. If the proximal joints were not calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_gaab1a5c7b6a32fa01bfad60f964065355}\label{group__glove_calibration_gaab1a5c7b6a32fa01bfad60f964065355}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+thumb\+\_\+calibration@{end\+\_\+thumb\+\_\+calibration}}
+\index{end\+\_\+thumb\+\_\+calibration@{end\+\_\+thumb\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{end\+\_\+thumb\+\_\+calibration()}{end\_thumb\_calibration()}}
+{\footnotesize\ttfamily bool end\+\_\+thumb\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not thumb calibration was stopped. If the thumb was not calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_ga4528575643eb59c92277338516679588}\label{group__glove_calibration_ga4528575643eb59c92277338516679588}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!end\+\_\+wrist\+\_\+calibration@{end\+\_\+wrist\+\_\+calibration}}
+\index{end\+\_\+wrist\+\_\+calibration@{end\+\_\+wrist\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{end\+\_\+wrist\+\_\+calibration()}{end\_wrist\_calibration()}}
+{\footnotesize\ttfamily bool end\+\_\+wrist\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not wrist calibration was stopped. If wrist was not calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_gabdcc329a1b06cd17988398aabbbb74c2}\label{group__glove_calibration_gabdcc329a1b06cd17988398aabbbb74c2}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!get\+\_\+calibration\+\_\+state@{get\+\_\+calibration\+\_\+state}}
+\index{get\+\_\+calibration\+\_\+state@{get\+\_\+calibration\+\_\+state}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{get\+\_\+calibration\+\_\+state()}{get\_calibration\_state()}}
+{\footnotesize\ttfamily const \hyperlink{struct_calibration_state}{Calibration\+State}$\ast$ const get\+\_\+calibration\+\_\+state (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A structure containing the current states for each calibration step. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_ga8aa9f0c942b42299bc16440ce3d2c785}\label{group__glove_calibration_ga8aa9f0c942b42299bc16440ce3d2c785}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+proximal\+\_\+calibration@{start\+\_\+proximal\+\_\+calibration}}
+\index{start\+\_\+proximal\+\_\+calibration@{start\+\_\+proximal\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{start\+\_\+proximal\+\_\+calibration()}{start\_proximal\_calibration()}}
+{\footnotesize\ttfamily bool start\+\_\+proximal\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not proximal calibration was started. If the proximal joints are already calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_ga8d3e246642b4dbb70be016ad320cc320}\label{group__glove_calibration_ga8d3e246642b4dbb70be016ad320cc320}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+thumb\+\_\+calibration@{start\+\_\+thumb\+\_\+calibration}}
+\index{start\+\_\+thumb\+\_\+calibration@{start\+\_\+thumb\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{start\+\_\+thumb\+\_\+calibration()}{start\_thumb\_calibration()}}
+{\footnotesize\ttfamily bool start\+\_\+thumb\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not thumb calibration was started. If the thumb was already calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__glove_calibration_ga7a6d895e59fe7a4f554b05ab067087cc}\label{group__glove_calibration_ga7a6d895e59fe7a4f554b05ab067087cc}} 
+\index{Maestro calibration functions@{Maestro calibration functions}!start\+\_\+wrist\+\_\+calibration@{start\+\_\+wrist\+\_\+calibration}}
+\index{start\+\_\+wrist\+\_\+calibration@{start\+\_\+wrist\+\_\+calibration}!Maestro calibration functions@{Maestro calibration functions}}
+\subsubsection{\texorpdfstring{start\+\_\+wrist\+\_\+calibration()}{start\_wrist\_calibration()}}
+{\footnotesize\ttfamily bool start\+\_\+wrist\+\_\+calibration (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether or not wrist calibration was started. If wrist is already calibrating or {\ttfamily maestro\+Ptr} is invalid, {\ttfamily false} is returned. 
+\end{DoxyReturn}

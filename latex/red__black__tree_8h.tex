@@ -1,0 +1,109 @@
+\hypertarget{red__black__tree_8h}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/red\+\_\+black\+\_\+tree.h File Reference}
+\label{red__black__tree_8h}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/red\+\_\+black\+\_\+tree.\+h@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/red\+\_\+black\+\_\+tree.\+h}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct___r_b_node}{\+\_\+\+R\+B\+Node}
+\item 
+struct \hyperlink{struct___r_b_tree}{\+\_\+\+R\+B\+Tree}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct___r_b_node}{\+\_\+\+R\+B\+Node} \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}
+\item 
+typedef struct \hyperlink{struct___r_b_tree}{\+\_\+\+R\+B\+Tree} \hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree}
+\item 
+typedef void($\ast$ \hyperlink{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}{rb\+\_\+enumerate\+\_\+function}) (\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$ \hyperlink{red__black__tree_8h_a096874a3c67c6640da6d15c3cd728ce7}{rb\+\_\+tree\+\_\+create} ()
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8h_ab503da0d0ba41db5f2f3b5567fd21cde}{rb\+\_\+min} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8h_a72472e02026fc6d025436c90befdbc66}{rb\+\_\+max} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8h_afe950d5001b352a884ff3788924c25b1}{rb\+\_\+find} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$, int)
+\item 
+\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$ \hyperlink{red__black__tree_8h_a5081dee107c2057a6577fd774c2f81a9}{rb\+\_\+insert} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$, int, int)
+\item 
+void \hyperlink{red__black__tree_8h_af14050847d84ac9b667d4a4e7764aaa7}{rb\+\_\+print} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$)
+\item 
+void \hyperlink{red__black__tree_8h_ab86f2cfbea273e50af3374f0eb259992}{rb\+\_\+destroy} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$)
+\item 
+void \hyperlink{red__black__tree_8h_a8cb60c9e918057e9fd5db0af9859ecc2}{rb\+\_\+enumerate} (\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$, \hyperlink{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}{rb\+\_\+enumerate\+\_\+function})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}\label{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+enumerate\+\_\+function@{rb\+\_\+enumerate\+\_\+function}}
+\index{rb\+\_\+enumerate\+\_\+function@{rb\+\_\+enumerate\+\_\+function}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+enumerate\+\_\+function}{rb\_enumerate\_function}}
+{\footnotesize\ttfamily typedef void($\ast$ rb\+\_\+enumerate\+\_\+function) (\hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node} $\ast$)}
+
+\mbox{\Hypertarget{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}\label{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!R\+B\+Node@{R\+B\+Node}}
+\index{R\+B\+Node@{R\+B\+Node}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{R\+B\+Node}{RBNode}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct___r_b_node}{\+\_\+\+R\+B\+Node}  \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}}
+
+\mbox{\Hypertarget{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}\label{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!R\+B\+Tree@{R\+B\+Tree}}
+\index{R\+B\+Tree@{R\+B\+Tree}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{R\+B\+Tree}{RBTree}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct___r_b_tree}{\+\_\+\+R\+B\+Tree}  \hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{red__black__tree_8h_ab86f2cfbea273e50af3374f0eb259992}\label{red__black__tree_8h_ab86f2cfbea273e50af3374f0eb259992}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+destroy@{rb\+\_\+destroy}}
+\index{rb\+\_\+destroy@{rb\+\_\+destroy}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+destroy()}{rb\_destroy()}}
+{\footnotesize\ttfamily void rb\+\_\+destroy (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_a8cb60c9e918057e9fd5db0af9859ecc2}\label{red__black__tree_8h_a8cb60c9e918057e9fd5db0af9859ecc2}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+enumerate@{rb\+\_\+enumerate}}
+\index{rb\+\_\+enumerate@{rb\+\_\+enumerate}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+enumerate()}{rb\_enumerate()}}
+{\footnotesize\ttfamily void rb\+\_\+enumerate (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{,  }\item[{\hyperlink{red__black__tree_8h_a57835aa1b52e9ddd35b1ac10e9611011}{rb\+\_\+enumerate\+\_\+function}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_afe950d5001b352a884ff3788924c25b1}\label{red__black__tree_8h_afe950d5001b352a884ff3788924c25b1}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+find@{rb\+\_\+find}}
+\index{rb\+\_\+find@{rb\+\_\+find}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+find()}{rb\_find()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+find (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_a5081dee107c2057a6577fd774c2f81a9}\label{red__black__tree_8h_a5081dee107c2057a6577fd774c2f81a9}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+insert@{rb\+\_\+insert}}
+\index{rb\+\_\+insert@{rb\+\_\+insert}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+insert()}{rb\_insert()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+insert (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_a72472e02026fc6d025436c90befdbc66}\label{red__black__tree_8h_a72472e02026fc6d025436c90befdbc66}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+max@{rb\+\_\+max}}
+\index{rb\+\_\+max@{rb\+\_\+max}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+max()}{rb\_max()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+max (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_ab503da0d0ba41db5f2f3b5567fd21cde}\label{red__black__tree_8h_ab503da0d0ba41db5f2f3b5567fd21cde}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+min@{rb\+\_\+min}}
+\index{rb\+\_\+min@{rb\+\_\+min}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+min()}{rb\_min()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ae5ed73a0cad3d682ef3f5441286e46dd}{R\+B\+Node}$\ast$ rb\+\_\+min (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_af14050847d84ac9b667d4a4e7764aaa7}\label{red__black__tree_8h_af14050847d84ac9b667d4a4e7764aaa7}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+print@{rb\+\_\+print}}
+\index{rb\+\_\+print@{rb\+\_\+print}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+print()}{rb\_print()}}
+{\footnotesize\ttfamily void rb\+\_\+print (\begin{DoxyParamCaption}\item[{\hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{red__black__tree_8h_a096874a3c67c6640da6d15c3cd728ce7}\label{red__black__tree_8h_a096874a3c67c6640da6d15c3cd728ce7}} 
+\index{red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}!rb\+\_\+tree\+\_\+create@{rb\+\_\+tree\+\_\+create}}
+\index{rb\+\_\+tree\+\_\+create@{rb\+\_\+tree\+\_\+create}!red\+\_\+black\+\_\+tree.\+h@{red\+\_\+black\+\_\+tree.\+h}}
+\subsubsection{\texorpdfstring{rb\+\_\+tree\+\_\+create()}{rb\_tree\_create()}}
+{\footnotesize\ttfamily \hyperlink{red__black__tree_8h_ad17494f46b6d6f959a881b1bc3acd99a}{R\+B\+Tree}$\ast$ rb\+\_\+tree\+\_\+create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,187 @@
+
+
+\subsection*{Introduction}
+
+The Maestro C A\+PI allows developers to build tools and applications that utilize the Maestro glove\textquotesingle{}s motion capture and haptic functionality.
+
+\subsection*{Terminology}
+
+
+
+The documentation and S\+DK refer to different joints in the hand and finger using the terminology depicted above. The first joint on the thumb (where the thumb connects to the palm) has both a proximal rotation that controls inward rotation, much like the finger proximal joints, as well as an abduction rotation that controls the side-\/to-\/side rotation of the thumb. These two rotations paired together allow for the circular rotation of the thumb.
+
+\subsection*{Usage}
+
+\subsubsection*{Initial Setup}
+
+There are configuration files that must be in place for the A\+PI to function properly. These are copied to the correct locations by the Maestro installer (be sure to run the installer associated with the A\+PI version you\textquotesingle{}re using).
+
+\label{_configHeader}%
+
+
+\subsubsection*{Configuration}
+
+The configuration files for the Maestro can be found in {\ttfamily \%L\+O\+C\+A\+L\+A\+P\+P\+D\+A\+TA\%\textbackslash{}Contact Control Interfaces\textbackslash{}Maestro\textbackslash{}\mbox{[}V\+E\+R\+S\+I\+ON\mbox{]}\textbackslash{}Configuration} where {\ttfamily \mbox{[}V\+E\+R\+S\+I\+ON\mbox{]}} is the version of the S\+DK that you\textquotesingle{}re working with. For the 0.\+1 Alpha version, the configuration is located at {\ttfamily \%L\+O\+C\+A\+L\+A\+P\+P\+D\+A\+TA\%\textbackslash{}Contact Control Interfaces\textbackslash{}Maestro\textbackslash{}v0.\+1a\textbackslash{}Configuration}.
+
+Inside of the configuration directory, you\textquotesingle{}ll find two files\+: {\ttfamily left\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt} and {\ttfamily right\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt}. In most cases the contents of these two files should be the same, but you\textquotesingle{}re able to configure the rotation ranges per-\/glove if desired. The contents of the rotation range files are used for calculating the rotation of individual joints.
+
+Each line in the file represents a single joint with a comma delimited string of three values\+: the name of the joint, the minimum rotation, and the maximum rotation. The rotations themselves are specified as positive or negative floating-\/point numbers in the inclusive range {\ttfamily (0, 1)}, where {\ttfamily 0} is no rotation, and {\ttfamily 1} is a complete rotation (360 degrees). An example of the contents of one of these rotation range files can be seen below\+: \begin{DoxyVerb}Wrist,-0.15,0.12
+WristAbduction,-0.1,0.1
+IndexProximal,-0.02,0.3
+IndexDistal,0.0,0.261
+MiddleProximal,-0.02,0.3
+MiddleDistal,0.0,0.2
+RingProximal,-0.045,0.3
+RingDistal,0.0,0.2
+LittleProximal,-0.045,0.3
+LittleDistal,0,0.2
+ThumbMetacarpal,-0.06,0.1
+ThumbAbduction,-1.0,1.0
+ThumbDistal,-0.05,0.2
+\end{DoxyVerb}
+
+
+\subsubsection*{Development}
+
+To use the A\+PI, you must include the shared library and include the provided header files.
+
+
+\begin{DoxyEnumerate}
+\item The Maestro detection thread must be running for plugged in gloves to be detected. This is as simple as calling {\ttfamily \hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service()}}.
+\item Now that the service is running, you can use {\ttfamily \hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected(intptr\+\_\+t maestro\+Ptr)}} to determine if a glove is connected. Pass in the appropriate glove pointer obtained by {\ttfamily \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()}} or {\ttfamily \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}}.
+\item Once a glove is connected, the glove must be calibrated before the motion capture data can be used. See \href{#calibrationHeader}{\tt Calibration}
+\end{DoxyEnumerate}
+
+Once the Maestro is calibrated, you may retrieve motion capture data for your use in your application, as well as control the vibration and force-\/feedback haptic systems. For details, view the appropriate modules in the navigation on the left of the page.
+
+Here\textquotesingle{}s a single C program that continously outputs the wrist rotation\+:
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <stdio.h>}
+\textcolor{preprocessor}{#include "maestro.h"}
+
+\textcolor{keywordtype}{bool} calibrate\_wrist(intptr\_t rightGlove)
+\{
+    \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};
+
+    printf(\textcolor{stringliteral}{"Beginning wrist calibration. Hit enter when done..."});
+
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_calibration_ga7a6d895e59fe7a4f554b05ab067087cc}{start\_wrist\_calibration}(rightGlove)) \{
+        getchar();
+        result = \hyperlink{group__glove_calibration_ga4528575643eb59c92277338516679588}{end\_wrist\_calibration}(rightGlove);
+    \}
+
+    \textcolor{keywordflow}{return} result;
+\}
+
+\textcolor{keywordtype}{bool} calibrate\_fingers(intptr\_t rightGlove)
+\{
+    \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};
+
+    printf(\textcolor{stringliteral}{"Beginning proximal calibration. Hit enter when done..."});
+
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_calibration_ga8aa9f0c942b42299bc16440ce3d2c785}{start\_proximal\_calibration}(rightGlove)) \{
+        getchar();
+        result = \hyperlink{group__glove_calibration_gaca292cd71d6b63a803381ba9a43c3d85}{end\_proximal\_calibration}(rightGlove);
+    \}
+
+    \textcolor{keywordflow}{return} result;
+\}
+
+\textcolor{keywordtype}{bool} calibrate\_thumb(intptr\_t rightGlove)
+\{
+    \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};
+
+    printf(\textcolor{stringliteral}{"Beginning distal calibration. Hit enter when done..."});
+
+    \textcolor{keywordflow}{if} (start\_distal\_calibration(rightGlove)) \{
+        getchar();
+        result = end\_distal\_calibration(rightGlove);
+    \}
+
+    \textcolor{keywordflow}{return} result;
+\}
+
+\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])
+\{
+    \textcolor{keywordtype}{int} exit\_status = EXIT\_SUCCESS;
+
+    \textcolor{comment}{//Start the Maestro detection thread. This thread will handle connecting/disconnecting Maestro gloves}
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\_maestro\_detection\_service}()) \{
+        intptr\_t rightGlove = \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\_right\_glove\_pointer}();
+
+        printf(\textcolor{stringliteral}{"Waiting for right glove...\(\backslash\)n"});
+
+        \textcolor{comment}{//Wait until right glove is connected}
+        \textcolor{keywordflow}{while} (!\hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\_glove\_connected}(rightGlove)) \{
+            Sleep(250);
+        \}
+
+        printf(\textcolor{stringliteral}{"Right glove found.\(\backslash\)n"});
+
+        \textcolor{comment}{//Calibrate the Maestro}
+        \textcolor{keywordflow}{if} (calibrate\_wrist(rightGlove)) \{
+            \textcolor{keywordflow}{if} (calibrate\_fingers(rightGlove)) \{
+                \textcolor{keywordflow}{if} (calibrate\_thumb(rightGlove)) \{
+
+                    printf(\textcolor{stringliteral}{"Maestro calibration completed!\(\backslash\)n"});
+
+                    \textcolor{comment}{//Output wrist rotation}
+                    \textcolor{keywordflow}{for} (;;) \{
+                        printf(\textcolor{stringliteral}{"Wrist rotation: %f\(\backslash\)n"}, 
+      \hyperlink{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}{get\_wrist\_proximal\_rotation}(rightGlove));
+                        Sleep(100);
+                    \}
+                \}
+            \}
+        \}
+    \} \textcolor{keywordflow}{else} \{
+        fprintf(stderr, \textcolor{stringliteral}{"Failed to start Maestro detection thread.\(\backslash\)n"});
+        exit\_status = EXIT\_FAILURE;
+    \}
+
+    \textcolor{keywordflow}{return} exit\_status;
+\}
+\end{DoxyCode}
+
+
+\label{_calibrationHeader}%
+
+
+\subsubsection*{Calibration}
+
+The calibration process consists of three steps\+: calibrating the wrist, and then the proximal joints of the fingers and thumb, and then the thumb. {\bfseries The alpha release of the Maestro does not include independent distal joint tracking.}
+
+
+\begin{DoxyEnumerate}
+\item Calibrating the wrist\+: move your wrist through a full range of motion up and down. Try to keep your fingers flat (straight out) during this motion. 
+\item Calibrating the fingers\+: move your fingers through a full range of motion from flat to curled inward like a fist. 
+\item Calibrating the thumb\+: move your thumb through a full range of circular motion. 
+\end{DoxyEnumerate}
+
+You can repeat each of these motions during their respective calibration step until satisfied with the resulting calibration. You do not need to move at the same speed as the examples shown; as long as you don\textquotesingle{}t move too quickly and/or inconsistently the quality of the calibration should not be noticeably impacted.
+
+\subsection*{Troubleshooting and debugging}
+
+\subsubsection*{Logging}
+
+The Maestro A\+PI generates log files to help aid debugging in the event that glove is not properly connecting.
+
+The log files for the Maestro can be found in {\ttfamily \%L\+O\+C\+A\+L\+A\+P\+P\+D\+A\+TA\%\textbackslash{}Contact Control Interfaces\textbackslash{}Maestro\textbackslash{}\mbox{[}V\+E\+R\+S\+I\+ON\mbox{]}\textbackslash{}Logs}. Inside the {\ttfamily Logs} folder there will be log files of the format {\ttfamily maestro-\/\mbox{[}T\+I\+M\+E\+S\+T\+A\+MP\mbox{]}.log}, where {\ttfamily \mbox{[}T\+I\+M\+E\+S\+T\+A\+MP\mbox{]}} is the local date on which that particular log file was generated.
+
+The log messages themselves are formatted as follows\+: {\ttfamily \mbox{[}L\+O\+NG T\+I\+M\+E\+S\+T\+A\+MP\mbox{]}\mbox{[}C\+A\+T\+E\+G\+O\+RY\mbox{]}\+: \mbox{[}M\+E\+S\+S\+A\+GE\mbox{]}}. The category is included to aid readability, and usually the {\ttfamily E\+R\+R\+OR} category will prove to be most useful in debugging. The category {\ttfamily E\+R\+R\+OR} will also log the last error from Windows A\+PI. \href{https://msdn.microsoft.com/en-us/library/windows/desktop/ms681381(v=vs.85).aspx}{\tt A complete list of all possible Windows system error codes can be found here.} Should the glove be successfully detected but fail to start, the log files will return one of the following error codes. Note that errors 5-\/10 deal with the motion ranges file specifically\+: \begin{DoxyVerb}0 - Success (should never be logged, as this is not an error)
+1 - Glove failed to start because it was already running.
+2 - Failed to connect to the glove, usually because it was not plugged in.
+3 - Failed to create a new thread for the connected glove.
+4 - Deprecated
+5 - Failed to find the appropriate motion range file, i.e. `left_maestro_rotation_ranges.txt` or `right_maestro_rotation_ranges.txt`.
+6 - A required rotation range entry is missing. For example, the `IndexProximal` line is missing.
+7 - A required rotation range entry is invalid. For example, having an extra comma or value.
+8 - A rotation range entry is invalid, for instance having non-numeric characters in the rotation values.
+9 - A rotation range is valid, but the values are in the incorrect order, that is to say not ascending.
+10 - An entry's name is invalid, for instance having `IndexPrimoxal` instead of `IndexProximal`. Usually indicates a typo or extra line.
+\end{DoxyVerb}
+
+
+These files are generated purely to help debug easy to fix issues with the system or configuration, and can be deleted without issue if need be. Please note that these logs may not encompass any error that can occur, but should help diagnose most errors. Also please note that these logs report only on the Maestro device itself, and will give no insight into your calibration, or any project-\/related configuration that may be affecting your development. 

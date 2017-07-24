@@ -1,0 +1,77 @@
+\hypertarget{detection_8h}{}\section{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/detection.h File Reference}
+\label{detection_8h}\index{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/detection.\+h@{C\+:/\+Users/\+Control Interfaces/\+C\+Lion\+Projects/\+Maestro/include/detection.\+h}}
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}packet/packet\+\_\+detection.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_detection_thread_args}{Detection\+Thread\+Args}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{detection_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+\item 
+\#define \hyperlink{detection_8h_aca693ef0c3ff4d8e84ec266002b33321}{M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT}~50
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef H\+A\+N\+D\+LE($\ast$ \hyperlink{detection_8h_a0e5fd4ffa41d01b58a4fae952aaa5612}{Find\+Maestro\+Arduino\+Func}) (D\+W\+O\+RD)
+\item 
+typedef void($\ast$ \hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func}) (wchar\+\_\+t $\ast$p\+Port)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{detection_8h_a5a0d88778a1d0875603fe553944c37eb}{start\+\_\+glove\+\_\+detection\+\_\+thread} (\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func} on\+\_\+connect, \hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func} on\+\_\+disconnect)
+\item 
+\hyperlink{struct_detection_packet}{Detection\+Packet} \hyperlink{detection_8h_ac1b44b089b72bc6e8f22efb74a2219e9}{find\+\_\+maestro\+\_\+arduino} (wchar\+\_\+t $\ast$port, H\+A\+N\+D\+LE $\ast$p\+Handle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{detection_8h_aca693ef0c3ff4d8e84ec266002b33321}\label{detection_8h_aca693ef0c3ff4d8e84ec266002b33321}} 
+\index{detection.\+h@{detection.\+h}!M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT@{M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT}}
+\index{M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT@{M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT}{MAX\_COM\_PORT}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+C\+O\+M\+\_\+\+P\+O\+RT~50}
+
+\mbox{\Hypertarget{detection_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}\label{detection_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}} 
+\index{detection.\+h@{detection.\+h}!W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}}
+\index{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN@{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}{WIN32\_LEAN\_AND\_MEAN}}
+{\footnotesize\ttfamily \#define W\+I\+N32\+\_\+\+L\+E\+A\+N\+\_\+\+A\+N\+D\+\_\+\+M\+E\+AN}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{detection_8h_a0e5fd4ffa41d01b58a4fae952aaa5612}\label{detection_8h_a0e5fd4ffa41d01b58a4fae952aaa5612}} 
+\index{detection.\+h@{detection.\+h}!Find\+Maestro\+Arduino\+Func@{Find\+Maestro\+Arduino\+Func}}
+\index{Find\+Maestro\+Arduino\+Func@{Find\+Maestro\+Arduino\+Func}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{Find\+Maestro\+Arduino\+Func}{FindMaestroArduinoFunc}}
+{\footnotesize\ttfamily typedef H\+A\+N\+D\+LE($\ast$ Find\+Maestro\+Arduino\+Func) (D\+W\+O\+RD)}
+
+\mbox{\Hypertarget{detection_8h_a97acba48581134d2db93ead25c0e8c32}\label{detection_8h_a97acba48581134d2db93ead25c0e8c32}} 
+\index{detection.\+h@{detection.\+h}!maestro\+\_\+port\+\_\+change\+\_\+func@{maestro\+\_\+port\+\_\+change\+\_\+func}}
+\index{maestro\+\_\+port\+\_\+change\+\_\+func@{maestro\+\_\+port\+\_\+change\+\_\+func}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{maestro\+\_\+port\+\_\+change\+\_\+func}{maestro\_port\_change\_func}}
+{\footnotesize\ttfamily typedef void($\ast$ maestro\+\_\+port\+\_\+change\+\_\+func) (wchar\+\_\+t $\ast$p\+Port)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{detection_8h_ac1b44b089b72bc6e8f22efb74a2219e9}\label{detection_8h_ac1b44b089b72bc6e8f22efb74a2219e9}} 
+\index{detection.\+h@{detection.\+h}!find\+\_\+maestro\+\_\+arduino@{find\+\_\+maestro\+\_\+arduino}}
+\index{find\+\_\+maestro\+\_\+arduino@{find\+\_\+maestro\+\_\+arduino}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+maestro\+\_\+arduino()}{find\_maestro\_arduino()}}
+{\footnotesize\ttfamily \hyperlink{struct_detection_packet}{Detection\+Packet} find\+\_\+maestro\+\_\+arduino (\begin{DoxyParamCaption}\item[{wchar\+\_\+t $\ast$}]{port,  }\item[{H\+A\+N\+D\+LE $\ast$}]{p\+Handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{detection_8h_a5a0d88778a1d0875603fe553944c37eb}\label{detection_8h_a5a0d88778a1d0875603fe553944c37eb}} 
+\index{detection.\+h@{detection.\+h}!start\+\_\+glove\+\_\+detection\+\_\+thread@{start\+\_\+glove\+\_\+detection\+\_\+thread}}
+\index{start\+\_\+glove\+\_\+detection\+\_\+thread@{start\+\_\+glove\+\_\+detection\+\_\+thread}!detection.\+h@{detection.\+h}}
+\subsubsection{\texorpdfstring{start\+\_\+glove\+\_\+detection\+\_\+thread()}{start\_glove\_detection\_thread()}}
+{\footnotesize\ttfamily bool start\+\_\+glove\+\_\+detection\+\_\+thread (\begin{DoxyParamCaption}\item[{\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func}}]{on\+\_\+connect,  }\item[{\hyperlink{detection_8h_a97acba48581134d2db93ead25c0e8c32}{maestro\+\_\+port\+\_\+change\+\_\+func}}]{on\+\_\+disconnect }\end{DoxyParamCaption})}
+
