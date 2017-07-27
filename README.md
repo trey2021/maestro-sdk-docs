@@ -1,4 +1,4 @@
-# maestro-api-docs
-Maestro C API Documentation
+# maestro-sdk-docs
+Maestro SDK Documentation
 
-See https://contact-control-interfaces.github.io/maestro-api-docs/html/index.html
+C API - See https://contact-control-interfaces.github.io/maestro-sdk-docs/C/html/index.html
