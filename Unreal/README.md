@@ -31,6 +31,7 @@ If you are developing an application using C++ rather than Blueprint scripting, 
 It should be noted that the plugin calls `start_maestro_detection_service` on start-up, so it is unnecessary to call this function to get the glove to connect provided the plugin is enabled and starts up properly.
 
 ## Useful Blueprints
+The list below is not meant to be a complete and comprehensive list of all included content with the plugin, but instead is meant to detail the purpose and member variables of a few of the ones that are most likely to be used. The blueprints below are also meant as an example for how to use the plugin 
 #### MaestroHand
 Example of animating a skeletal mesh with data from the Maestro. Blueprint handles haptic responses on overlap, as well as object pickup interactions. For this reason, all actors in the scene need to have overlap events enabled in order for the blueprint to react to them. All instance variables under the Maestro category are necessary for the blueprint to function properly, and their purposes are as follows:
 > **Which Hand** - Whether this hand is a left hand or a right hand. Blueprint uses this to decide how to draw the skeletal mesh and which glove to retrieve data from.
@@ -88,3 +89,6 @@ Sphere collider that is attached to the end of a finger or to the palm to enable
 > **Index** - Integer index defining which finger this collider is attached to. `0` is the thumb, `1`-`4` are the fingers, `5` is the palm. Assigned automatically by [MaestroHand](#maestrohand).
 >
 > **Parent** - Reference to the [MaestroHand](#maestrohand) actor that owns this collider. Used to decide where to parent object upon pickup and get the glove pointer for haptic responses.
+
+## Example VR Project
+The Maestro Unreal SDK also includes an example project based off the Unreal VR Template to show pickup and object interaction with the Maestro. The example `MinimalUnrealVR` project can be downloaded off [the Contact CI website](https://contactci.co) and includes the plugin itself. The Project is set up to use the [MaestroPawn](#maestropawn) blueprint, so it's variables will have to be set properly for the glove to track.
