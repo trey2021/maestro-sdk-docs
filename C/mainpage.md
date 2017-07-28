@@ -181,4 +181,4 @@ Note that errors 5-10 deal with the motion ranges file specifically:
 These files are generated purely to help debug easy to fix issues with the system or configuration, and can be deleted without issue if need be. Please note that these logs may not encompass any error that can occur, but should help diagnose most errors. Also please note that these logs report only on the Maestro device itself, and will give no insight into your calibration, or any project-related configuration that may be affecting your development. 
 
 
-
+<strong>Please contact us at support@contactci.co with any questions.</strong>

@@ -1,0 +1,148 @@
+\hypertarget{group__velocity_access}{}\section{Displacement velocity functions}
+\label{group__velocity_access}\index{Displacement velocity functions@{Displacement velocity functions}}
+
+
+These functions are used to get displacement velocity data for specific hand and finger joints.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{group__velocity_access_ga7d809526003fac45ee527df5e4bcb011}{get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_ga2a5bef0486e4cb5ef4181ecb3ef78ba5}{get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_gad35bee8dbf90f9f0106fd9f5c6efac2c}{get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_ga5c587b9748bd964199b596c024d8ed0c}{get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_ga015bb09a174411f845448f951d4a9000}{get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_ga4077c76793eb77fdde55eff9b5540806}{get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+float \hyperlink{group__velocity_access_ga1c0fe44ea6caec9d337030a4395759ea}{get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity} (intptr\+\_\+t maestro\+Ptr)
+\item 
+const \hyperlink{struct_displacement_velocity_context}{Displacement\+Velocity\+Context} $\ast$const \hyperlink{group__velocity_access_ga062167111a7cc6f51ced782fd0596042}{get\+\_\+displacement\+\_\+velocity\+\_\+context} (intptr\+\_\+t maestro\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to get displacement velocity data for specific hand and finger joints. 
+
+{\bfseries {\ttfamily \#include \char`\"{}maestro.\+h\char`\"{}}}
+
+Velocities are measured in displacement per second. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__velocity_access_ga062167111a7cc6f51ced782fd0596042}\label{group__velocity_access_ga062167111a7cc6f51ced782fd0596042}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+displacement\+\_\+velocity\+\_\+context@{get\+\_\+displacement\+\_\+velocity\+\_\+context}}
+\index{get\+\_\+displacement\+\_\+velocity\+\_\+context@{get\+\_\+displacement\+\_\+velocity\+\_\+context}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+displacement\+\_\+velocity\+\_\+context()}{get\_displacement\_velocity\_context()}}
+{\footnotesize\ttfamily const \hyperlink{struct_displacement_velocity_context}{Displacement\+Velocity\+Context}$\ast$ const get\+\_\+displacement\+\_\+velocity\+\_\+context (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga5c587b9748bd964199b596c024d8ed0c}\label{group__velocity_access_ga5c587b9748bd964199b596c024d8ed0c}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_index\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+index\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the index finger proximal joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga1c0fe44ea6caec9d337030a4395759ea}\label{group__velocity_access_ga1c0fe44ea6caec9d337030a4395759ea}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_little\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+little\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the little (pinky) finger proximal joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga015bb09a174411f845448f951d4a9000}\label{group__velocity_access_ga015bb09a174411f845448f951d4a9000}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_middle\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+middle\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the middle finger proximal joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga4077c76793eb77fdde55eff9b5540806}\label{group__velocity_access_ga4077c76793eb77fdde55eff9b5540806}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_ring\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+ring\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the ring finger proximal joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_gad35bee8dbf90f9f0106fd9f5c6efac2c}\label{group__velocity_access_gad35bee8dbf90f9f0106fd9f5c6efac2c}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity@{get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity()}{get\_thumb\_abduction\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+abduction\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the thumb abduction joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga2a5bef0486e4cb5ef4181ecb3ef78ba5}\label{group__velocity_access_ga2a5bef0486e4cb5ef4181ecb3ef78ba5}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_thumb\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+thumb\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the thumb proximal joint. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__velocity_access_ga7d809526003fac45ee527df5e4bcb011}\label{group__velocity_access_ga7d809526003fac45ee527df5e4bcb011}} 
+\index{Displacement velocity functions@{Displacement velocity functions}!get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity}}
+\index{get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity@{get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity}!Displacement velocity functions@{Displacement velocity functions}}
+\subsubsection{\texorpdfstring{get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity()}{get\_wrist\_proximal\_displacement\_velocity()}}
+{\footnotesize\ttfamily float get\+\_\+wrist\+\_\+proximal\+\_\+displacement\+\_\+velocity (\begin{DoxyParamCaption}\item[{intptr\+\_\+t}]{maestro\+Ptr }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em maestro\+Ptr} & The pointer the Maestro Glove context. Obtained by \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()} or \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Displacement velocity measured in displacement per second for the wrist. Obtained by calculating the difference between current and previous displacement divided by time between readings. 
+\end{DoxyReturn}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['glove_20management_20functions',['Glove management functions',['../group__glove_management.html',1,'']]]
+  ['force_2dfeedback_20control_20functions',['Force-feedback control functions',['../group__force_feedback_control.html',1,'']]]
 ];

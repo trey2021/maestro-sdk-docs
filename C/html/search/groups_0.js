@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['force_2dfeedback_20control_20functions',['Force-feedback control functions',['../group__force_feedback_control.html',1,'']]]
+  ['displacement_20access_20functions',['Displacement access functions',['../group__displacement_access.html',1,'']]],
+  ['displacement_20velocity_20functions',['Displacement velocity functions',['../group__velocity_access.html',1,'']]]
 ];

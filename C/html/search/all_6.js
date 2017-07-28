@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['index_5fdistal_5fdisplacement',['index_distal_displacement',['../struct_displacement_context.html#a5591c4a9fdbe950d4807ddaa238092ba',1,'DisplacementContext']]],
-  ['index_5fdistal_5frotation',['index_distal_rotation',['../struct_rotation_context.html#ab3f85c0f3bf1d47fe36be1e48a27a6e7',1,'RotationContext']]],
   ['index_5fmotor_5famplitude',['index_motor_amplitude',['../struct_force_feedback_context.html#a8fd107476e5051e429353129234b4005',1,'ForceFeedbackContext']]],
   ['index_5fproximal_5fdisplacement',['index_proximal_displacement',['../struct_displacement_context.html#af3083c1881d82ac3ef96443c1a7c1dc6',1,'DisplacementContext']]],
+  ['index_5fproximal_5fdisplacement_5fvelocity',['index_proximal_displacement_velocity',['../struct_displacement_velocity_context.html#a16096585239e812e24500d9bb439f3c7',1,'DisplacementVelocityContext']]],
   ['index_5fproximal_5frotation',['index_proximal_rotation',['../struct_rotation_context.html#a81b612bd6d1aa2c5b06098761225f82b',1,'RotationContext']]],
   ['index_5fvibration_5feffect',['index_vibration_effect',['../struct_vibration_context.html#aed1123261e626637a40324850f0603e6',1,'VibrationContext']]],
   ['is_5fglove_5fconnected',['is_glove_connected',['../group__glove_management.html#ga85666868951331c5266df7559abeefbc',1,'maestro.h']]],

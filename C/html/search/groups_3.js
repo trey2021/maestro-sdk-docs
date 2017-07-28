@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['maestro_20calibration_20functions',['Maestro calibration functions',['../group__glove_calibration.html',1,'']]]
+  ['haptic_20control_20functions',['Haptic control functions',['../group__haptics_control.html',1,'']]]
 ];
