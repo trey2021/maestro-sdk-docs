@@ -1,21 +1,14 @@
 var NAVTREE =
 [
   [ "Maestro C API", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Variables", "functions_vars.html", null ]
-      ] ]
-    ] ]
+    [ "Maestro SDK Documentation", "md__d_1__maestro__gloves__master_beta_maestro-sdk-docs__r_e_a_d_m_e.html", null ],
+    [ "Maestro Unreal SDK Guide", "md__d_1__maestro__gloves__master_beta_maestro-sdk-docs__unreal__r_e_a_d_m_e.html", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
