@@ -128,7 +128,7 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
                     printf(\textcolor{stringliteral}{"Maestro calibration completed!\(\backslash\)n"});
 
                     \textcolor{comment}{//Output wrist rotation}
-                    \textcolor{keywordflow}{for} (;;) \{
+                    \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
                         printf(\textcolor{stringliteral}{"Wrist rotation: %f\(\backslash\)n"}, get\_wrist\_proximal\_rotation(rightGlove));
                         Sleep(100);
                     \}
