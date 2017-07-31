@@ -90,11 +90,11 @@ bool calibrate_thumb(intptr_t rightGlove)
 {
     bool result = false;
 
-    printf("Beginning distal calibration. Hit enter when done...");
+    printf("Beginning thumb calibration. Hit enter when done...");
 
-    if (start_distal_calibration(rightGlove)) {
+    if (start_thumb_calibration(rightGlove)) {
         getchar();
-        result = end_distal_calibration(rightGlove);
+        result = end_thumb_calibration(rightGlove);
     }
 
     return result;
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
                     printf("Maestro calibration completed!\n");
 
                     //Output wrist rotation
-                    while (true) {
+                    while(true) {
                         printf("Wrist rotation: %f\n", get_wrist_proximal_rotation(rightGlove));
                         Sleep(100);
                     }

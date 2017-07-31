@@ -93,11 +93,11 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
 \{
     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};
 
-    printf(\textcolor{stringliteral}{"Beginning distal calibration. Hit enter when done..."});
+    printf(\textcolor{stringliteral}{"Beginning thumb calibration. Hit enter when done..."});
 
-    \textcolor{keywordflow}{if} (start\_distal\_calibration(rightGlove)) \{
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_calibration_ga8d3e246642b4dbb70be016ad320cc320}{start\_thumb\_calibration}(rightGlove)) \{
         getchar();
-        result = end\_distal\_calibration(rightGlove);
+        result = \hyperlink{group__glove_calibration_gaab1a5c7b6a32fa01bfad60f964065355}{end\_thumb\_calibration}(rightGlove);
     \}
 
     \textcolor{keywordflow}{return} result;
@@ -128,7 +128,7 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
                     printf(\textcolor{stringliteral}{"Maestro calibration completed!\(\backslash\)n"});
 
                     \textcolor{comment}{//Output wrist rotation}
-                    \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+                    \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
                         printf(\textcolor{stringliteral}{"Wrist rotation: %f\(\backslash\)n"}, 
       \hyperlink{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}{get\_wrist\_proximal\_rotation}(rightGlove));
                         Sleep(100);
