@@ -47,8 +47,8 @@ To use the A\+PI, you must include the shared library and include the provided h
 
 
 \begin{DoxyEnumerate}
-\item The Maestro detection thread must be running for plugged in gloves to be detected. This is as simple as calling {\ttfamily start\+\_\+maestro\+\_\+detection\+\_\+service()}.
-\item Now that the service is running, you can use {\ttfamily is\+\_\+glove\+\_\+connected(intptr\+\_\+t maestro\+Ptr)} to determine if a glove is connected. Pass in the appropriate glove pointer obtained by {\ttfamily get\+\_\+left\+\_\+glove\+\_\+pointer()} or {\ttfamily get\+\_\+right\+\_\+glove\+\_\+pointer()}.
+\item The Maestro detection thread must be running for plugged in gloves to be detected. This is as simple as calling {\ttfamily \hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\+\_\+maestro\+\_\+detection\+\_\+service()}}.
+\item Now that the service is running, you can use {\ttfamily \hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\+\_\+glove\+\_\+connected(intptr\+\_\+t maestro\+Ptr)}} to determine if a glove is connected. Pass in the appropriate glove pointer obtained by {\ttfamily \hyperlink{group__glove_management_ga63ce3c99d4a8b8db851b22af9185764e}{get\+\_\+left\+\_\+glove\+\_\+pointer()}} or {\ttfamily \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\+\_\+right\+\_\+glove\+\_\+pointer()}}.
 \item Once a glove is connected, the glove must be calibrated before the motion capture data can be used. See \href{#calibrationHeader}{\tt Calibration}
 \end{DoxyEnumerate}
 
@@ -67,9 +67,9 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
 
     printf(\textcolor{stringliteral}{"Beginning wrist calibration. Hit enter when done..."});
 
-    \textcolor{keywordflow}{if} (start\_wrist\_calibration(rightGlove)) \{
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_calibration_ga7a6d895e59fe7a4f554b05ab067087cc}{start\_wrist\_calibration}(rightGlove)) \{
         getchar();
-        result = end\_wrist\_calibration(rightGlove);
+        result = \hyperlink{group__glove_calibration_ga4528575643eb59c92277338516679588}{end\_wrist\_calibration}(rightGlove);
     \}
 
     \textcolor{keywordflow}{return} result;
@@ -81,9 +81,9 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
 
     printf(\textcolor{stringliteral}{"Beginning proximal calibration. Hit enter when done..."});
 
-    \textcolor{keywordflow}{if} (start\_proximal\_calibration(rightGlove)) \{
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_calibration_ga8aa9f0c942b42299bc16440ce3d2c785}{start\_proximal\_calibration}(rightGlove)) \{
         getchar();
-        result = end\_proximal\_calibration(rightGlove);
+        result = \hyperlink{group__glove_calibration_gaca292cd71d6b63a803381ba9a43c3d85}{end\_proximal\_calibration}(rightGlove);
     \}
 
     \textcolor{keywordflow}{return} result;
@@ -108,13 +108,13 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
     \textcolor{keywordtype}{int} exit\_status = EXIT\_SUCCESS;
 
     \textcolor{comment}{//Start the Maestro detection thread. This thread will handle connecting/disconnecting Maestro gloves}
-    \textcolor{keywordflow}{if} (start\_maestro\_detection\_service()) \{
-        intptr\_t rightGlove = get\_right\_glove\_pointer();
+    \textcolor{keywordflow}{if} (\hyperlink{group__glove_management_ga10088517f643220611dfcd5da08bfaa1}{start\_maestro\_detection\_service}()) \{
+        intptr\_t rightGlove = \hyperlink{group__glove_management_ga9b8fd9d91aeac3f8da50f7a7eba0c32b}{get\_right\_glove\_pointer}();
 
         printf(\textcolor{stringliteral}{"Waiting for right glove...\(\backslash\)n"});
 
         \textcolor{comment}{//Wait until right glove is connected}
-        \textcolor{keywordflow}{while} (!is\_glove\_connected(rightGlove)) \{
+        \textcolor{keywordflow}{while} (!\hyperlink{group__glove_management_ga85666868951331c5266df7559abeefbc}{is\_glove\_connected}(rightGlove)) \{
             Sleep(250);
         \}
 
@@ -128,8 +128,9 @@ Here\textquotesingle{}s a single C program that continously outputs the wrist ro
                     printf(\textcolor{stringliteral}{"Maestro calibration completed!\(\backslash\)n"});
 
                     \textcolor{comment}{//Output wrist rotation}
-                    \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{
-                        printf(\textcolor{stringliteral}{"Wrist rotation: %f\(\backslash\)n"}, get\_wrist\_proximal\_rotation(rightGlove));
+                    \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+                        printf(\textcolor{stringliteral}{"Wrist rotation: %f\(\backslash\)n"}, 
+      \hyperlink{group__rotation_access_ga155f18439d7b43c1722b035fc38a3225}{get\_wrist\_proximal\_rotation}(rightGlove));
                         Sleep(100);
                     \}
                 \}

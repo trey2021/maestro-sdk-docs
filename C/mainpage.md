@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
                     printf("Maestro calibration completed!\n");
 
                     //Output wrist rotation
-                    while(true) {
+                    while (true) {
                         printf("Wrist rotation: %f\n", get_wrist_proximal_rotation(rightGlove));
                         Sleep(100);
                     }
