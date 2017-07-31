@@ -26,7 +26,7 @@ It is also possible to install the plugin on the specific version of UE4 itself 
 ## Getting Started with the Plugin
 The main objective of the plugin is to make it easier for developers and designers alike to interface with the Maestro Glove. For this reason, the plugin includes a Blueprint Function Library that exposes all of our C API functions to the Blueprint Editor under the Maestro Glove category. It also includes several Blueprints that should be useful when attempting to interface with the Maestro. In order to be able to see the content included with the plugin the “Show Plugin Content” checkbox under the View Options dropdown in the Content Browser must be selected. The included content is detailed in the [Useful Blueprints section below](#useful-blueprints).
 
-If you are developing an application using C++ rather than Blueprint scripting, it may be more useful to simply include either of the C headers, `maestro.h` or `maestro_types.h`, and use those exposed functions directly. These headers are stored in the `Source\Maestro\Includes` folder of the plugin. As the included Blueprint Function Library is simply a wrapper for the C API, using the headers directly can eliminate some unnecessary overhead.
+If you are developing an application using C++ rather than Blueprint scripting, it may be more useful to simply include both of the C headers, `maestro.h` and `maestro_types.h`, and use those exposed functions directly. These headers are stored in the `Source\Maestro\Includes` folder of the plugin. As the included Blueprint Function Library is simply a wrapper for the C API, using the headers directly can eliminate some unnecessary overhead.
 
 It should be noted that the plugin calls `start_maestro_detection_service` on start-up, so it is unnecessary to call this function to get the glove to connect provided the plugin is enabled and starts up properly.
 
@@ -36,11 +36,11 @@ The list below is not meant to be a complete and comprehensive list of all inclu
 Example of animating a skeletal mesh with data from the Maestro. Blueprint handles haptic responses on overlap, as well as object pickup interactions. For this reason, all actors in the scene need to have overlap events enabled in order for the blueprint to react to them. All instance variables under the Maestro category are necessary for the blueprint to function properly, and their purposes are as follows:
 > **Which Hand** - Whether this hand is a left hand or a right hand. Blueprint uses this to decide how to draw the skeletal mesh and which glove to retrieve data from.
 > 
-> **Vibration Effect** - Byte representing the vibration effect played in the fingertips during an overlap.
+> **Vibration Effect** - Byte representing the vibration effect played in the fingertips during an overlap. [A full effect list can be found in the C API docs here](https://contact-control-interfaces.github.io/maestro-sdk-docs/C/html/group__vibration_control.html).
 > 
-> **Pull Amplitude** - Byte representing the amplitude of the force feedback motors during an overlap, `0` being no pull and `255` being full pull.
+> **Pull Amplitude** - Byte representing the amplitude of the force feedback motors during an overlap, `0` being no pull and `255` being full pull. It is recommended to always set this to somewhere in the approximate range `40`-`200`. Values above about `200` are clamped down to `200`. This maximum value may change at our discretion.
 > 
-> **Index Socket** - Name of the socket on the [MaestroHand](#maestrohand)'s skeletal mesh that it located at the tip of the index finger. This is where the index finger's collider will be attached for haptics/pickup. [Socket documentation can be found here](https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/Sockets/).
+> **Index Socket** - Name of the socket on the [MaestroHand](#maestrohand)'s skeletal mesh that it located at the tip of the index finger. This is where the index finger's collider will be attached for haptics and pickup logic. [Socket documentation can be found here](https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/Sockets/).
 > 
 > **Middle Socket** - Same as Index Socket, but for the middle finger.
 > 
@@ -50,13 +50,13 @@ Example of animating a skeletal mesh with data from the Maestro. Blueprint handl
 > 
 > **Thumb Socket** - Same as Index Socket, but for the thumb.
 >
-> **Palm Socket** -  Name of the socket on the Hand's skeletal mesh that it located at the center of the palm. This is where the palm's collider will be attached for pickup.
+> **Palm Socket** -  Name of the socket on the Hand's skeletal mesh that it located at the center of the palm. This is where the palm's collider will be attached for pickup logic.
 >
 > **Finger Size** - Diameter of colliders used on the fingertips.
 >
 > **Palm Size** - Size of the collider used on the palm.
 
-Additionally, it is generally useful to be able to calibrate based on keypresses, so three key variables are exposed in the Calibration category for this purpose.
+Additionally, it is generally useful to be able to calibrate based on keypresses, so three key variables are exposed in the Calibration category for this purpose. All three are "None" by default as to not interfere with any other key-based game logic.
 > **Wrist Calibration Key** - Key that calibrates the wrist for this hand while held.
 > 
 > **Proximal Calibration Key** - Key that calibrates the proximal joints (fingers) for this hand while held.
@@ -84,7 +84,7 @@ Actor component that can be attached to any overlap-enabled actor to allow the [
 >
 > **Pinch Threshold** - How much your finger has to uncurl from the position it grabbed the object to define a release, specifically when the grab is between the thumb and a finger. 
 
-#### FingertipCollider
+#### FingerTipCollider
 Sphere collider that is attached to the end of a finger or to the palm to enable haptics/pickup. Spawned automatically by [MaestroHand](#maestrohand).
 > **Index** - Integer index defining which finger this collider is attached to. `0` is the thumb, `1`-`4` are the fingers, `5` is the palm. Assigned automatically by [MaestroHand](#maestrohand).
 >
