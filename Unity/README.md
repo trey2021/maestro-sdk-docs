@@ -7,7 +7,7 @@ The SDK contains:
 - Menus and Utilities for glove calibration, gesture recording, and general settings.
 - ~~Prefabifier utility for using custom arm or hand assets.~~ *(In development; will be released soon)*
 
-You can also find a minimal example project here, containing virtual reality and non-VR example scenes.
+You can also find a minimal example project [here](https://github.com/Contact-Control-Interfaces/maestro-sdk-unity/releases/download/v0.1a/unitysdkdarts.zip), containing some interaction and menu examples.
 
 ## Setup
 
