@@ -1,6 +1,6 @@
 # Maestro Unity SDK Guide
 
-The Unity SDK can be downloaded from [the Contact CI website](https://contactci.co).
+The Unity SDK can be downloaded [here](https://github.com/Contact-Control-Interfaces/maestro-sdk-unity/releases/tag/v0.1a).
 
 The SDK contains:
 - Prefab for the left and right arm that comes fully rigged with motion capture, vibration haptics, force-feedback, gesture recognition, and pick-up logic.  
@@ -11,7 +11,7 @@ You can also find a minimal example project here, containing virtual reality and
 
 ## Setup
 
-First you will need to run the Maestro Alpha installer, which will handle creating configuration files needed for the Maestro to work. This is described under "Initial Setup" and "Configuration" [here](https://contact-control-interfaces.github.io/maestro-sdk-docs/C/html/index.html)
+First you will need to run the [Maestro Alpha installer](https://github.com/Contact-Control-Interfaces/maestro-installer), which will handle creating configuration files needed for the Maestro to work. This is described under "Initial Setup" and "Configuration" [here](https://contact-control-interfaces.github.io/maestro-sdk-docs/C/html/index.html)
 
 Once you have configuration files installed and the Unity Maestro SDK Unity Package imported into a Unity project, you should see the "DefaultMaestroRig [CameraRig]" prefab under `Assets/Prefabs`. This is the fully rigged headset and arms described above. If you want more control over which features are enabled, they are described below.
 
