@@ -14,7 +14,7 @@ The documentation and S\+DK refer to different joints in the hand and finger usi
 
 \subsubsection*{Initial Setup}
 
-There are configuration files that must be in place for the A\+PI to function properly. These are copied to the correct locations by the Maestro installer (be sure to run the installer associated with the A\+PI version you\textquotesingle{}re using).
+There are configuration files that must be in place for the A\+PI to function properly. These are copied to the correct locations by the \href{https://github.com/Contact-Control-Interfaces/maestro-installer}{\tt Maestro installer} (be sure to run the installer associated with the A\+PI version you\textquotesingle{}re using).
 
 \label{_configHeader}%
 
@@ -25,19 +25,13 @@ The configuration files for the Maestro can be found in {\ttfamily \%L\+O\+C\+A\
 
 Inside of the configuration directory, you\textquotesingle{}ll find two files\+: {\ttfamily left\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt} and {\ttfamily right\+\_\+maestro\+\_\+rotation\+\_\+ranges.\+txt}. In most cases the contents of these two files should be the same, but you\textquotesingle{}re able to configure the rotation ranges per-\/glove if desired. The contents of the rotation range files are used for calculating the rotation of individual joints.
 
-Each line in the file represents a single joint with a comma delimited string of three values\+: the name of the joint, the minimum rotation, and the maximum rotation. The rotations themselves are specified as positive or negative floating-\/point numbers in the inclusive range {\ttfamily (0, 1)}, where {\ttfamily 0} is no rotation, and {\ttfamily 1} is a complete rotation (360 degrees). An example of the contents of one of these rotation range files can be seen below\+: \begin{DoxyVerb}Wrist,-0.15,0.12
-WristAbduction,-0.1,0.1
-IndexProximal,-0.02,0.3
-IndexDistal,0.0,0.261
-MiddleProximal,-0.02,0.3
-MiddleDistal,0.0,0.2
-RingProximal,-0.045,0.3
-RingDistal,0.0,0.2
-LittleProximal,-0.045,0.3
-LittleDistal,0,0.2
-ThumbMetacarpal,-0.06,0.1
-ThumbAbduction,-1.0,1.0
-ThumbDistal,-0.05,0.2
+Each line in the file represents a single joint with a comma delimited string of three values\+: the name of the joint, the minimum rotation, and the maximum rotation. The rotations themselves are specified as positive or negative floating-\/point numbers in the inclusive range {\ttfamily (0, 1)}, where {\ttfamily 0} is no rotation, and {\ttfamily 1} is a complete rotation (360 degrees). An example of the contents of one of these rotation range files can be seen below\+: \begin{DoxyVerb}Wrist,-0.12,0.12
+IndexProximal,-0.06,0.3
+MiddleProximal,-0.06,0.3
+RingProximal,-0.06,0.3
+LittleProximal,-0.06,0.3
+ThumbMetacarpal,-0.15,0.25
+ThumbAbduction,-0.06,0.075
 \end{DoxyVerb}
 
 

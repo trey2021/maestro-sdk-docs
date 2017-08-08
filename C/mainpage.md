@@ -14,7 +14,7 @@ The documentation and SDK refer to different joints in the hand and finger using
 
 ### Initial Setup
 
-There are configuration files that must be in place for the API to function properly. These are copied to the correct locations by the Maestro installer (be sure to run the installer associated with the API version you're using).
+There are configuration files that must be in place for the API to function properly. These are copied to the correct locations by the <a href="https://github.com/Contact-Control-Interfaces/maestro-installer">Maestro installer</a> (be sure to run the installer associated with the API version you're using).
 
 <a name="configHeader"></a>
 
@@ -28,19 +28,13 @@ The contents of the rotation range files are used for calculating the rotation o
 Each line in the file represents a single joint with a comma delimited string of three values: the name of the joint, the minimum rotation, and the maximum rotation. The rotations themselves are specified as positive or negative floating-point numbers in the inclusive range `(0, 1)`, where `0` is no rotation, and `1` is a complete rotation (360 degrees). 
 An example of the contents of one of these  rotation range files can be seen below:
 
-	Wrist,-0.15,0.12
-	WristAbduction,-0.1,0.1
-	IndexProximal,-0.02,0.3
-	IndexDistal,0.0,0.261
-	MiddleProximal,-0.02,0.3
-	MiddleDistal,0.0,0.2
-	RingProximal,-0.045,0.3
-	RingDistal,0.0,0.2
-	LittleProximal,-0.045,0.3
-	LittleDistal,0,0.2
-	ThumbMetacarpal,-0.06,0.1
-	ThumbAbduction,-1.0,1.0
-	ThumbDistal,-0.05,0.2
+	Wrist,-0.12,0.12
+	IndexProximal,-0.06,0.3
+	MiddleProximal,-0.06,0.3
+	RingProximal,-0.06,0.3
+	LittleProximal,-0.06,0.3
+	ThumbMetacarpal,-0.15,0.25
+	ThumbAbduction,-0.06,0.075
 	
 ### Development
 	
