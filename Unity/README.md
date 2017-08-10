@@ -19,6 +19,8 @@ Once you have configuration files installed and the Unity Maestro SDK Unity Pack
 
 Aspects of the Maestro's functionality can be used independently, or you can use the default arm prefabs which contain all functionality.
 
+The bring up the menu, you can either perform the gesture associated with the `MenuActivation` (`Key Gesture` field) script on the Maestro rig prefab, or you can hit the F10 key while at runtime. F9 will skip the settings menu and take you straight into the calibration sequence.
+
 ### Motion Capture
 
 Motion capture is controlled by scripts on the appropriate segments of the hand and fingers that set the rotation for that joint. The proper script hierarchy can be seen below:
