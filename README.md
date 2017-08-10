@@ -50,3 +50,5 @@ Unreal
 - Thumb:
   - Circling in both clockwise and counterclockwise directions 2 or 3 times helps capture the most accurate calibration for thumb.
   - Keeping wrist still is crucial for gathering accurate calibration data.
+  
+ ## Please contact us at support@contactci.co with any questions.
